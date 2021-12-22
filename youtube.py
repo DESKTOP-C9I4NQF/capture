@@ -22,5 +22,7 @@ ydl_opts = {
 
 home = os.getenv("HOME")
 os.chdir(f"{home}/Music/")
+if (len(sys.argv) == 2):
+    os.chdir(sys.argv[1])
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
     ydl.download(["https://youtu.be/" + video])
