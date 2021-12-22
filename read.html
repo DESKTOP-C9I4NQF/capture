@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="follow, all" />
+<meta name="language" content="en, sv" />
+<title>Raspberry Pi GPIO Programming in C | Big Mess o&#039; Wires</title>
+<meta name="distribution" content="global" />
+<meta name="robots" content="follow, all" />
+<meta name="language" content="en, sv" />
+<meta name="generator" content="WordPress 4.7.5" />
+<!-- leave this for stats please -->
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://www.bigmessowires.com/feed/" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="https://www.bigmessowires.com/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="https://www.bigmessowires.com/feed/atom/" />
+<link rel="pingback" href="https://www.bigmessowires.com/xmlrpc.php" />
+<!-- favicons -->
+<link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<!--link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"-->
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#da532c">
+<!-- end favicons -->
+	<link rel='archives' title='December 2021' href='https://www.bigmessowires.com/2021/12/' />
+	<link rel='archives' title='November 2021' href='https://www.bigmessowires.com/2021/11/' />
+	<link rel='archives' title='October 2021' href='https://www.bigmessowires.com/2021/10/' />
+	<link rel='archives' title='September 2021' href='https://www.bigmessowires.com/2021/09/' />
+	<link rel='archives' title='August 2021' href='https://www.bigmessowires.com/2021/08/' />
+	<link rel='archives' title='July 2021' href='https://www.bigmessowires.com/2021/07/' />
+	<link rel='archives' title='June 2021' href='https://www.bigmessowires.com/2021/06/' />
+	<link rel='archives' title='May 2021' href='https://www.bigmessowires.com/2021/05/' />
+	<link rel='archives' title='April 2021' href='https://www.bigmessowires.com/2021/04/' />
+	<link rel='archives' title='March 2021' href='https://www.bigmessowires.com/2021/03/' />
+	<link rel='archives' title='February 2021' href='https://www.bigmessowires.com/2021/02/' />
+	<link rel='archives' title='January 2021' href='https://www.bigmessowires.com/2021/01/' />
+	<link rel='archives' title='December 2020' href='https://www.bigmessowires.com/2020/12/' />
+	<link rel='archives' title='November 2020' href='https://www.bigmessowires.com/2020/11/' />
+	<link rel='archives' title='September 2020' href='https://www.bigmessowires.com/2020/09/' />
+	<link rel='archives' title='August 2020' href='https://www.bigmessowires.com/2020/08/' />
+	<link rel='archives' title='June 2020' href='https://www.bigmessowires.com/2020/06/' />
+	<link rel='archives' title='May 2020' href='https://www.bigmessowires.com/2020/05/' />
+	<link rel='archives' title='April 2020' href='https://www.bigmessowires.com/2020/04/' />
+	<link rel='archives' title='March 2020' href='https://www.bigmessowires.com/2020/03/' />
+	<link rel='archives' title='November 2019' href='https://www.bigmessowires.com/2019/11/' />
+	<link rel='archives' title='October 2019' href='https://www.bigmessowires.com/2019/10/' />
+	<link rel='archives' title='September 2019' href='https://www.bigmessowires.com/2019/09/' />
+	<link rel='archives' title='August 2019' href='https://www.bigmessowires.com/2019/08/' />
+	<link rel='archives' title='July 2019' href='https://www.bigmessowires.com/2019/07/' />
+	<link rel='archives' title='June 2019' href='https://www.bigmessowires.com/2019/06/' />
+	<link rel='archives' title='May 2019' href='https://www.bigmessowires.com/2019/05/' />
+	<link rel='archives' title='April 2019' href='https://www.bigmessowires.com/2019/04/' />
+	<link rel='archives' title='March 2019' href='https://www.bigmessowires.com/2019/03/' />
+	<link rel='archives' title='February 2019' href='https://www.bigmessowires.com/2019/02/' />
+	<link rel='archives' title='January 2019' href='https://www.bigmessowires.com/2019/01/' />
+	<link rel='archives' title='December 2018' href='https://www.bigmessowires.com/2018/12/' />
+	<link rel='archives' title='November 2018' href='https://www.bigmessowires.com/2018/11/' />
+	<link rel='archives' title='June 2018' href='https://www.bigmessowires.com/2018/06/' />
+	<link rel='archives' title='May 2018' href='https://www.bigmessowires.com/2018/05/' />
+	<link rel='archives' title='April 2018' href='https://www.bigmessowires.com/2018/04/' />
+	<link rel='archives' title='March 2018' href='https://www.bigmessowires.com/2018/03/' />
+	<link rel='archives' title='February 2018' href='https://www.bigmessowires.com/2018/02/' />
+	<link rel='archives' title='January 2018' href='https://www.bigmessowires.com/2018/01/' />
+	<link rel='archives' title='December 2017' href='https://www.bigmessowires.com/2017/12/' />
+	<link rel='archives' title='November 2017' href='https://www.bigmessowires.com/2017/11/' />
+	<link rel='archives' title='September 2017' href='https://www.bigmessowires.com/2017/09/' />
+	<link rel='archives' title='August 2017' href='https://www.bigmessowires.com/2017/08/' />
+	<link rel='archives' title='July 2017' href='https://www.bigmessowires.com/2017/07/' />
+	<link rel='archives' title='June 2017' href='https://www.bigmessowires.com/2017/06/' />
+	<link rel='archives' title='May 2017' href='https://www.bigmessowires.com/2017/05/' />
+	<link rel='archives' title='April 2017' href='https://www.bigmessowires.com/2017/04/' />
+	<link rel='archives' title='March 2017' href='https://www.bigmessowires.com/2017/03/' />
+	<link rel='archives' title='February 2017' href='https://www.bigmessowires.com/2017/02/' />
+	<link rel='archives' title='January 2017' href='https://www.bigmessowires.com/2017/01/' />
+	<link rel='archives' title='December 2016' href='https://www.bigmessowires.com/2016/12/' />
+	<link rel='archives' title='November 2016' href='https://www.bigmessowires.com/2016/11/' />
+	<link rel='archives' title='August 2016' href='https://www.bigmessowires.com/2016/08/' />
+	<link rel='archives' title='July 2016' href='https://www.bigmessowires.com/2016/07/' />
+	<link rel='archives' title='June 2016' href='https://www.bigmessowires.com/2016/06/' />
+	<link rel='archives' title='May 2016' href='https://www.bigmessowires.com/2016/05/' />
+	<link rel='archives' title='April 2016' href='https://www.bigmessowires.com/2016/04/' />
+	<link rel='archives' title='March 2016' href='https://www.bigmessowires.com/2016/03/' />
+	<link rel='archives' title='February 2016' href='https://www.bigmessowires.com/2016/02/' />
+	<link rel='archives' title='January 2016' href='https://www.bigmessowires.com/2016/01/' />
+	<link rel='archives' title='December 2015' href='https://www.bigmessowires.com/2015/12/' />
+	<link rel='archives' title='November 2015' href='https://www.bigmessowires.com/2015/11/' />
+	<link rel='archives' title='October 2015' href='https://www.bigmessowires.com/2015/10/' />
+	<link rel='archives' title='September 2015' href='https://www.bigmessowires.com/2015/09/' />
+	<link rel='archives' title='August 2015' href='https://www.bigmessowires.com/2015/08/' />
+	<link rel='archives' title='July 2015' href='https://www.bigmessowires.com/2015/07/' />
+	<link rel='archives' title='June 2015' href='https://www.bigmessowires.com/2015/06/' />
+	<link rel='archives' title='May 2015' href='https://www.bigmessowires.com/2015/05/' />
+	<link rel='archives' title='April 2015' href='https://www.bigmessowires.com/2015/04/' />
+	<link rel='archives' title='March 2015' href='https://www.bigmessowires.com/2015/03/' />
+	<link rel='archives' title='February 2015' href='https://www.bigmessowires.com/2015/02/' />
+	<link rel='archives' title='January 2015' href='https://www.bigmessowires.com/2015/01/' />
+	<link rel='archives' title='December 2014' href='https://www.bigmessowires.com/2014/12/' />
+	<link rel='archives' title='November 2014' href='https://www.bigmessowires.com/2014/11/' />
+	<link rel='archives' title='October 2014' href='https://www.bigmessowires.com/2014/10/' />
+	<link rel='archives' title='September 2014' href='https://www.bigmessowires.com/2014/09/' />
+	<link rel='archives' title='August 2014' href='https://www.bigmessowires.com/2014/08/' />
+	<link rel='archives' title='May 2014' href='https://www.bigmessowires.com/2014/05/' />
+	<link rel='archives' title='April 2014' href='https://www.bigmessowires.com/2014/04/' />
+	<link rel='archives' title='March 2014' href='https://www.bigmessowires.com/2014/03/' />
+	<link rel='archives' title='February 2014' href='https://www.bigmessowires.com/2014/02/' />
+	<link rel='archives' title='January 2014' href='https://www.bigmessowires.com/2014/01/' />
+	<link rel='archives' title='December 2013' href='https://www.bigmessowires.com/2013/12/' />
+	<link rel='archives' title='November 2013' href='https://www.bigmessowires.com/2013/11/' />
+	<link rel='archives' title='October 2013' href='https://www.bigmessowires.com/2013/10/' />
+	<link rel='archives' title='September 2013' href='https://www.bigmessowires.com/2013/09/' />
+	<link rel='archives' title='August 2013' href='https://www.bigmessowires.com/2013/08/' />
+	<link rel='archives' title='June 2013' href='https://www.bigmessowires.com/2013/06/' />
+	<link rel='archives' title='January 2013' href='https://www.bigmessowires.com/2013/01/' />
+	<link rel='archives' title='December 2012' href='https://www.bigmessowires.com/2012/12/' />
+	<link rel='archives' title='September 2012' href='https://www.bigmessowires.com/2012/09/' />
+	<link rel='archives' title='April 2012' href='https://www.bigmessowires.com/2012/04/' />
+	<link rel='archives' title='March 2012' href='https://www.bigmessowires.com/2012/03/' />
+	<link rel='archives' title='February 2012' href='https://www.bigmessowires.com/2012/02/' />
+	<link rel='archives' title='January 2012' href='https://www.bigmessowires.com/2012/01/' />
+	<link rel='archives' title='December 2011' href='https://www.bigmessowires.com/2011/12/' />
+	<link rel='archives' title='November 2011' href='https://www.bigmessowires.com/2011/11/' />
+	<link rel='archives' title='October 2011' href='https://www.bigmessowires.com/2011/10/' />
+	<link rel='archives' title='September 2011' href='https://www.bigmessowires.com/2011/09/' />
+	<link rel='archives' title='August 2011' href='https://www.bigmessowires.com/2011/08/' />
+	<link rel='archives' title='July 2011' href='https://www.bigmessowires.com/2011/07/' />
+	<link rel='archives' title='June 2011' href='https://www.bigmessowires.com/2011/06/' />
+	<link rel='archives' title='May 2011' href='https://www.bigmessowires.com/2011/05/' />
+	<link rel='archives' title='April 2011' href='https://www.bigmessowires.com/2011/04/' />
+	<link rel='archives' title='November 2010' href='https://www.bigmessowires.com/2010/11/' />
+	<link rel='archives' title='June 2010' href='https://www.bigmessowires.com/2010/06/' />
+	<link rel='archives' title='May 2010' href='https://www.bigmessowires.com/2010/05/' />
+	<link rel='archives' title='April 2010' href='https://www.bigmessowires.com/2010/04/' />
+	<link rel='archives' title='March 2010' href='https://www.bigmessowires.com/2010/03/' />
+	<link rel='archives' title='February 2010' href='https://www.bigmessowires.com/2010/02/' />
+	<link rel='archives' title='July 2009' href='https://www.bigmessowires.com/2009/07/' />
+	<link rel='archives' title='June 2009' href='https://www.bigmessowires.com/2009/06/' />
+	<link rel='archives' title='May 2009' href='https://www.bigmessowires.com/2009/05/' />
+	<link rel='archives' title='April 2009' href='https://www.bigmessowires.com/2009/04/' />
+	<link rel='archives' title='March 2009' href='https://www.bigmessowires.com/2009/03/' />
+	<link rel='archives' title='February 2009' href='https://www.bigmessowires.com/2009/02/' />
+	<link rel='archives' title='January 2009' href='https://www.bigmessowires.com/2009/01/' />
+	<link rel='archives' title='December 2008' href='https://www.bigmessowires.com/2008/12/' />
+	<link rel='archives' title='November 2008' href='https://www.bigmessowires.com/2008/11/' />
+	<link rel='archives' title='October 2008' href='https://www.bigmessowires.com/2008/10/' />
+	<link rel='archives' title='September 2008' href='https://www.bigmessowires.com/2008/09/' />
+	<link rel='archives' title='August 2008' href='https://www.bigmessowires.com/2008/08/' />
+	<link rel='archives' title='July 2008' href='https://www.bigmessowires.com/2008/07/' />
+	<link rel='archives' title='June 2008' href='https://www.bigmessowires.com/2008/06/' />
+	<link rel='archives' title='May 2008' href='https://www.bigmessowires.com/2008/05/' />
+	<link rel='archives' title='April 2008' href='https://www.bigmessowires.com/2008/04/' />
+	<link rel='archives' title='March 2008' href='https://www.bigmessowires.com/2008/03/' />
+	<link rel='archives' title='February 2008' href='https://www.bigmessowires.com/2008/02/' />
+	<link rel='archives' title='January 2008' href='https://www.bigmessowires.com/2008/01/' />
+	<link rel='archives' title='December 2007' href='https://www.bigmessowires.com/2007/12/' />
+	<link rel='archives' title='November 2007' href='https://www.bigmessowires.com/2007/11/' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Big Mess o&#039; Wires &raquo; Raspberry Pi GPIO Programming in C Comments Feed" href="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.bigmessowires.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='https://www.bigmessowires.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.bigmessowires.com/xmlrpc.php?rsd" />
+<link rel='prev' title='64 x 32 LED Matrix Programming' href='https://www.bigmessowires.com/2018/05/24/64-x-32-led-matrix-programming/' />
+<link rel='next' title='LED PWM Without Resistors' href='https://www.bigmessowires.com/2018/06/01/led-pwm-without-resistors/' />
+<meta name="generator" content="WordPress 4.7.5" />
+<link rel="canonical" href="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/" />
+<link rel='shortlink' href='https://www.bigmessowires.com/?p=5553' />
+<link rel="alternate" type="application/json+oembed" href="https://www.bigmessowires.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bigmessowires.com%2F2018%2F05%2F26%2Fraspberry-pi-gpio-programming-in-c%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.bigmessowires.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bigmessowires.com%2F2018%2F05%2F26%2Fraspberry-pi-gpio-programming-in-c%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" media="screen">
+		<!-- @import url( https://www.bigmessowires.com/wp-content/themes/fspring_widgets/style.css ); -->
+</style>
+</head>
+<body>
+<script type='text/javascript' src='https://www.bigmessowires.com/wp-includes/js/jquery/jquery.js'></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73408384-1', 'auto');
+  ga( 'set', 'anonymizeIp', true );
+  ga( 'set', 'dimension1', 'no' );
+
+  jQuery(function($) {
+    if (typeof registerProductImpressions == 'function') { 
+      registerProductImpressions(); 
+    }
+    ga('send', 'pageview');
+  });
+</script>
+<div id="pages">    
+<div id="titleimage">
+  <a href="https://www.bigmessowires.com"><img src="/bmow-title.png" alt="BMOW title" /></a>
+</div>
+<div id="femu-banner">
+  <a href="/floppy-emu"><img src="/banner-get10-v6-1.2.png" alt="Floppy Emu banner" width=743 height=76 /></a><!--a href="/2018/12/01/get-10-give-10-floppy-emu-and-samaritan-house/"><img src="/wp-content/uploads/2018/12/femu-banner-get10give10.png" alt="Floppy Emu banner" width="743" height="76" /></a-->
+</div>
+<!--div id="feedlinks">
+  <a href="/about">About BMOW</a><br/>
+  <br/>
+  <a class="feeditem" href="http://feeds.feedburner.com/BigMessOWires" title="Feed">RSS</a>&nbsp;<img style="vertical-align:bottom;" src="/feed-icon-14x14.png" alt="RSS Feed" /><br />
+  <a class="feeditem" href="http://feedly.com/index.html#subscription%2Ffeed%2Fhttp%3A%2F%2Fwww.bigmessowires.com%2Ffeed%2F" title="Follow on feedly">feedly</a>&nbsp;<img style="vertical-align:bottom;" src="/feedly-icon.png" alt="Feedly" /><br />
+</div-->
+<!-- <ul><li class="page_item page-item-4850"><a href="https://www.bigmessowires.com/wombat-case/">ADB-USB Wombat Case Assembly</a></li>
+<li class="page_item page-item-2222"><a href="https://www.bigmessowires.com/store/">BMOW Store</a></li>
+<li class="page_item page-item-4471"><a href="https://www.bigmessowires.com/contact/">Contact BMOW</a></li>
+<li class="page_item page-item-7327"><a href="https://www.bigmessowires.com/daisy-chainer-case/">Daisy Chainer Case Assembly</a></li>
+<li class="page_item page-item-6922"><a href="https://www.bigmessowires.com/dual525/">Dual 5.25 Adapter for Disk II Interface Card</a></li>
+<li class="page_item page-item-5145"><a href="https://www.bigmessowires.com/emu-case/">Floppy Emu Case Assembly</a></li>
+<li class="page_item page-item-6457"><a href="https://www.bigmessowires.com/emu-case-ss/">Floppy Emu Model C Case Assembly</a></li>
+<li class="page_item page-item-2529"><a href="https://www.bigmessowires.com/floppy-emu-tech-design/">Floppy Emu Technology Design</a></li>
+<li class="page_item page-item-5501"><a href="https://www.bigmessowires.com/switcher/">Internal/External Drive Switcher for Apple IIc</a></li>
+<li class="page_item page-item-5951"><a href="https://www.bigmessowires.com/mac-rom-inator-ii-programming/">Mac ROM-inator II Programming</a></li>
+<li class="page_item page-item-4125"><a href="https://www.bigmessowires.com/mac-se30-with-upgraded-rom/">Mac SE/30 with Upgraded ROM</a></li>
+<li class="page_item page-item-3514"><a href="https://www.bigmessowires.com/order-confirmation/">Order Confirmation</a></li>
+<li class="page_item page-item-28"><a href="https://www.bigmessowires.com/about/">About BMOW</a></li>
+<li class="page_item page-item-651"><a href="https://www.bigmessowires.com/floppy-emu/">Floppy Emu Disk Emulator for Apple II, Macintosh, and Lisa</a></li>
+<li class="page_item page-item-4566"><a href="https://www.bigmessowires.com/usb-wombat/">Wombat ADB-USB Input Converter</a></li>
+<li class="page_item page-item-113"><a href="https://www.bigmessowires.com/3d-graphics-thingy/">3D Graphics Thingy</a></li>
+<li class="page_item page-item-1741"><a href="https://www.bigmessowires.com/68-katy/">68 Katy</a></li>
+<li class="page_item page-item-355"><a href="https://www.bigmessowires.com/backcountry-logger/">Backwoods Logger</a></li>
+<li class="page_item page-item-2"><a href="https://www.bigmessowires.com/bmow1/">BMOW 1 Computer</a></li>
+<li class="page_item page-item-4089"><a href="https://www.bigmessowires.com/classic-mac-floppies/">Classic Mac Floppies</a></li>
+<li class="page_item page-item-2351"><a href="https://www.bigmessowires.com/sonic-bow-tie/">Electric Bow Tie</a></li>
+<li class="page_item page-item-2130"><a href="https://www.bigmessowires.com/mac-rom-inator/">Mac ROM-inator</a></li>
+<li class="page_item page-item-3883"><a href="https://www.bigmessowires.com/mac-rom-inator-ii/">Mac ROM-inator II</a></li>
+<li class="page_item page-item-773"><a href="https://www.bigmessowires.com/mozart-tranz-330/">Mozart&#8217;s Credit Card</a></li>
+<li class="page_item page-item-937"><a href="https://www.bigmessowires.com/nibbler/">Nibbler 4 Bit CPU</a></li>
+<li class="page_item page-item-505"><a href="https://www.bigmessowires.com/plus-too/">Plus Too Mac Replica</a></li>
+<li class="page_item page-item-146"><a href="https://www.bigmessowires.com/cpu-in-a-cpld/">Tiny CPU in a CPLD</a></li>
+</ul> -->
+</div>
+<!-- div id="wrap" -->
+<!-- div id="logo" -->
+<!-- /div -->
+	
+<div id="sidebar">
+
+  <p />
+  <div id="searchdiv">
+    <!-- <form id="searchform" method="get" action="/index.php"> -->
+    <form id="searchform" method="get" action="https://www.google.com/search">
+      <input type="hidden" name="as_sitesearch" value="www.bigmessowires.com" />
+      <input type="text" name="as_q" id="s" placeholder="Search" />
+      <input name="sbutt" type="submit" value="Search" alt="Submit" style="display: none;" />
+    </form>
+  </div>
+  <div>
+  <a class="sidebaritem" href="https://shop.bigmessowires.com">BMOW Store</a><br/>
+  <a class="sidebaritem" href="/contact/#products">Customer Support</a><br/>
+  <a class="sidebaritem" href="/about">About BMOW</a><br/>
+  <a class="sidebaritem" href="/contact">Contact BMOW</a><br/>
+  <a class="sidebaritem" href="http://feeds.feedburner.com/BigMessOWires" title="Feed">RSS</a>&nbsp;<img style="vertical-align:bottom;" src="/feed-icon-14x14.png" alt="RSS Feed" />&nbsp;
+  <a class="sidebaritem" href="http://feedly.com/index.html#subscription%2Ffeed%2Fhttp%3A%2F%2Fwww.bigmessowires.com%2Ffeed%2F" title="Follow on feedly">feedly</a>&nbsp;<img style="vertical-align:bottom;" src="/feedly-icon.png" alt="Feedly" /><br/>
+  <br/>
+  </div>
+  <ul>
+  <li id="text-2" class="widget widget_text"><h2 class="widgettitle">Retro Products</h2>
+			<div class="textwidget"><a href="/floppy-emu">Floppy Emu Disk Emulator for vintage Apple II, Macintosh, and Lisa</a><br><br>
+<a href="/usb-wombat">Wombat ADB-USB Keyboard/Mouse Converter</a><br><br>
+<a href="/mac-rom-inator-ii">Mac ROM-inator II SIMM</a><br><br></div>
+		</li>
+<li id="pages-2" class="widget widget_pages"><h2 class="widgettitle">Projects</h2>
+		<ul>
+			<li class="page_item page-item-113"><a href="https://www.bigmessowires.com/3d-graphics-thingy/">3D Graphics Thingy</a></li>
+<li class="page_item page-item-1741"><a href="https://www.bigmessowires.com/68-katy/">68 Katy</a></li>
+<li class="page_item page-item-355"><a href="https://www.bigmessowires.com/backcountry-logger/">Backwoods Logger</a></li>
+<li class="page_item page-item-2"><a href="https://www.bigmessowires.com/bmow1/">BMOW 1 Computer</a></li>
+<li class="page_item page-item-2351"><a href="https://www.bigmessowires.com/sonic-bow-tie/">Electric Bow Tie</a></li>
+<li class="page_item page-item-2130"><a href="https://www.bigmessowires.com/mac-rom-inator/">Mac ROM-inator</a></li>
+<li class="page_item page-item-773"><a href="https://www.bigmessowires.com/mozart-tranz-330/">Mozart&#8217;s Credit Card</a></li>
+<li class="page_item page-item-937"><a href="https://www.bigmessowires.com/nibbler/">Nibbler 4 Bit CPU</a></li>
+<li class="page_item page-item-505"><a href="https://www.bigmessowires.com/plus-too/">Plus Too Mac Replica</a></li>
+<li class="page_item page-item-146"><a href="https://www.bigmessowires.com/cpu-in-a-cpld/">Tiny CPU in a CPLD</a></li>
+		</ul>
+		</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">NotJohn</span> on <a href="https://www.bigmessowires.com/2021/12/04/global-chip-shortage-hits-home/#comment-244111">Global Chip Shortage Hits Home</a></li><li class="recentcomments"><span class="comment-author-link">AGaw</span> on <a href="https://www.bigmessowires.com/2021/11/12/the-amazing-disk-ii-controller-card/#comment-244100">The Amazing Disk II Controller Card</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://solaremporium.com.au/' rel='external nofollow' class='url'>Solar Emporium</a></span> on <a href="https://www.bigmessowires.com/2020/03/19/small-scale-solar-experiments/#comment-244096">Small-Scale Solar Experiments</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://www.bigmessowires.com' rel='external nofollow' class='url'>Steve</a></span> on <a href="https://www.bigmessowires.com/2021/12/10/circuit-sleuthing-unidisk-5-25-enable-and-phi1/#comment-243870">Circuit Sleuthing: Unidisk 5.25 Enable and PHI1</a></li><li class="recentcomments"><span class="comment-author-link">Nick</span> on <a href="https://www.bigmessowires.com/2021/12/10/circuit-sleuthing-unidisk-5-25-enable-and-phi1/#comment-243867">Circuit Sleuthing: Unidisk 5.25 Enable and PHI1</a></li></ul></li>
+<li id="categories-1" class="widget widget_categories"><h2 class="widgettitle">Blog Topics</h2>
+		<ul>
+	<li class="cat-item cat-item-5"><a href="https://www.bigmessowires.com/category/3dgt/" title="A homebrew 3D graphics coprocessor.">3D Graphics Thingy</a> (15)
+</li>
+	<li class="cat-item cat-item-16"><a href="https://www.bigmessowires.com/category/68katy/" title="A 68000-based homebrew computer designed for running Linux.">68 Katy</a> (16)
+</li>
+	<li class="cat-item cat-item-11"><a href="https://www.bigmessowires.com/category/backcountrylogger/" title="A portable logger and graph viewer for altitude, temperature, and pressure data.">Backwoods Logger</a> (24)
+</li>
+	<li class="cat-item cat-item-4"><a href="https://www.bigmessowires.com/category/bitbucket/" title="Miscellaneous distractions and diversions.">Bit Bucket</a> (129)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.bigmessowires.com/category/bmow1/" title="The original BMOW: a custom-designed, hand-built 8-bit CPU and computer.">BMOW 1</a> (106)
+</li>
+	<li class="cat-item cat-item-15"><a href="https://www.bigmessowires.com/category/business/" title="The business side of selling electronics hardware.">Business</a> (40)
+</li>
+	<li class="cat-item cat-item-7"><a href="https://www.bigmessowires.com/category/devtools/" title="Tools and software of interest to electronics hobbyists.">Dev Tools</a> (29)
+</li>
+	<li class="cat-item cat-item-13"><a href="https://www.bigmessowires.com/category/macintosh-floppy-emu/" title="A floppy disk drive emulator for Macintosh computers, using an SD memory card and custom hardware to replace a 3.5″ disk drive and floppy disk.">Floppy Emu</a> (170)
+</li>
+	<li class="cat-item cat-item-14"><a href="https://www.bigmessowires.com/category/nibbler/" title="A simple 4-bit CPU and computer, built entirely with 7400 series parts.">Nibbler</a> (15)
+</li>
+	<li class="cat-item cat-item-12"><a href="https://www.bigmessowires.com/category/plustoo/" title="A hardware clone of the classic Macintosh 128K, 512K, 512Ke, and Plus.">Plus Too</a> (22)
+</li>
+	<li class="cat-item cat-item-9"><a href="https://www.bigmessowires.com/category/rc/" title="Experiments with radio-controlled cars and planes.">RC Vehicles</a> (2)
+</li>
+	<li class="cat-item cat-item-17"><a href="https://www.bigmessowires.com/category/rom-inator/" >ROM-inator</a> (18)
+</li>
+	<li class="cat-item cat-item-20"><a href="https://www.bigmessowires.com/category/star-ring/" >Star Ring</a> (2)
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.bigmessowires.com/category/tinycpu/" title="A custom soft-CPU implemented in a small CPLD.">Tiny CPU</a> (36)
+</li>
+	<li class="cat-item cat-item-10"><a href="https://www.bigmessowires.com/category/tranz330/" title="Turning the Verifone Tranz 330 credit card terminal into a general-purpose 8-bit computer. ">Tranz 330</a> (5)
+</li>
+	<li class="cat-item cat-item-1"><a href="https://www.bigmessowires.com/category/uncategorized/" >Uncategorized</a> (1)
+</li>
+	<li class="cat-item cat-item-18"><a href="https://www.bigmessowires.com/category/usb-wombat/" title="Use modern USB keyboards and mice with a vintage Macintosh or Apple II computer. Converts USB to ADB (Apple desktop bus).">USB Wombat</a> (33)
+</li>
+	<li class="cat-item cat-item-8"><a href="https://www.bigmessowires.com/category/uzebox/" title="A retro game console using an AVR 8-bit microcontroller and software-generated video signal.">Uzebox</a> (3)
+</li>
+	<li class="cat-item cat-item-19"><a href="https://www.bigmessowires.com/category/yellowstone/" title="An FPGA-based disk controller card for the Apple II family.">Yellowstone</a> (67)
+</li>
+		</ul>
+</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+			
+			<option value="">Select Month</option>
+				<option value='https://www.bigmessowires.com/2021/12/'> December 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/11/'> November 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/10/'> October 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/09/'> September 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/08/'> August 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/07/'> July 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/06/'> June 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/05/'> May 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/04/'> April 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/03/'> March 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/02/'> February 2021 </option>
+	<option value='https://www.bigmessowires.com/2021/01/'> January 2021 </option>
+	<option value='https://www.bigmessowires.com/2020/12/'> December 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/11/'> November 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/09/'> September 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/08/'> August 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/06/'> June 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/05/'> May 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/04/'> April 2020 </option>
+	<option value='https://www.bigmessowires.com/2020/03/'> March 2020 </option>
+	<option value='https://www.bigmessowires.com/2019/11/'> November 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/10/'> October 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/09/'> September 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/08/'> August 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/07/'> July 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/06/'> June 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/05/'> May 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/04/'> April 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/03/'> March 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/02/'> February 2019 </option>
+	<option value='https://www.bigmessowires.com/2019/01/'> January 2019 </option>
+	<option value='https://www.bigmessowires.com/2018/12/'> December 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/11/'> November 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/06/'> June 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/05/'> May 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/04/'> April 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/03/'> March 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/02/'> February 2018 </option>
+	<option value='https://www.bigmessowires.com/2018/01/'> January 2018 </option>
+	<option value='https://www.bigmessowires.com/2017/12/'> December 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/11/'> November 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/09/'> September 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/08/'> August 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/07/'> July 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/06/'> June 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/05/'> May 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/04/'> April 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/03/'> March 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/02/'> February 2017 </option>
+	<option value='https://www.bigmessowires.com/2017/01/'> January 2017 </option>
+	<option value='https://www.bigmessowires.com/2016/12/'> December 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/11/'> November 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/08/'> August 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/07/'> July 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/06/'> June 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/05/'> May 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/04/'> April 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/03/'> March 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/02/'> February 2016 </option>
+	<option value='https://www.bigmessowires.com/2016/01/'> January 2016 </option>
+	<option value='https://www.bigmessowires.com/2015/12/'> December 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/11/'> November 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/10/'> October 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/09/'> September 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/08/'> August 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/07/'> July 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/06/'> June 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/05/'> May 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/04/'> April 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/03/'> March 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/02/'> February 2015 </option>
+	<option value='https://www.bigmessowires.com/2015/01/'> January 2015 </option>
+	<option value='https://www.bigmessowires.com/2014/12/'> December 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/11/'> November 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/10/'> October 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/09/'> September 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/08/'> August 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/05/'> May 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/04/'> April 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/03/'> March 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/02/'> February 2014 </option>
+	<option value='https://www.bigmessowires.com/2014/01/'> January 2014 </option>
+	<option value='https://www.bigmessowires.com/2013/12/'> December 2013 </option>
+	<option value='https://www.bigmessowires.com/2013/11/'> November 2013 </option>
+	<option value='https://www.bigmessowires.com/2013/10/'> October 2013 </option>
+	<option value='https://www.bigmessowires.com/2013/09/'> September 2013 </option>
+	<option value='https://www.bigmessowires.com/2013/08/'> August 2013 </option>
+	<option value='https://www.bigmessowires.com/2013/06/'> June 2013 </option>
+	<option value='https://www.bigmessowires.com/2013/01/'> January 2013 </option>
+	<option value='https://www.bigmessowires.com/2012/12/'> December 2012 </option>
+	<option value='https://www.bigmessowires.com/2012/09/'> September 2012 </option>
+	<option value='https://www.bigmessowires.com/2012/04/'> April 2012 </option>
+	<option value='https://www.bigmessowires.com/2012/03/'> March 2012 </option>
+	<option value='https://www.bigmessowires.com/2012/02/'> February 2012 </option>
+	<option value='https://www.bigmessowires.com/2012/01/'> January 2012 </option>
+	<option value='https://www.bigmessowires.com/2011/12/'> December 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/11/'> November 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/10/'> October 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/09/'> September 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/08/'> August 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/07/'> July 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/06/'> June 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/05/'> May 2011 </option>
+	<option value='https://www.bigmessowires.com/2011/04/'> April 2011 </option>
+	<option value='https://www.bigmessowires.com/2010/11/'> November 2010 </option>
+	<option value='https://www.bigmessowires.com/2010/06/'> June 2010 </option>
+	<option value='https://www.bigmessowires.com/2010/05/'> May 2010 </option>
+	<option value='https://www.bigmessowires.com/2010/04/'> April 2010 </option>
+	<option value='https://www.bigmessowires.com/2010/03/'> March 2010 </option>
+	<option value='https://www.bigmessowires.com/2010/02/'> February 2010 </option>
+	<option value='https://www.bigmessowires.com/2009/07/'> July 2009 </option>
+	<option value='https://www.bigmessowires.com/2009/06/'> June 2009 </option>
+	<option value='https://www.bigmessowires.com/2009/05/'> May 2009 </option>
+	<option value='https://www.bigmessowires.com/2009/04/'> April 2009 </option>
+	<option value='https://www.bigmessowires.com/2009/03/'> March 2009 </option>
+	<option value='https://www.bigmessowires.com/2009/02/'> February 2009 </option>
+	<option value='https://www.bigmessowires.com/2009/01/'> January 2009 </option>
+	<option value='https://www.bigmessowires.com/2008/12/'> December 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/11/'> November 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/10/'> October 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/09/'> September 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/08/'> August 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/07/'> July 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/06/'> June 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/05/'> May 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/04/'> April 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/03/'> March 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/02/'> February 2008 </option>
+	<option value='https://www.bigmessowires.com/2008/01/'> January 2008 </option>
+	<option value='https://www.bigmessowires.com/2007/12/'> December 2007 </option>
+	<option value='https://www.bigmessowires.com/2007/11/'> November 2007 </option>
+
+		</select>
+		</li>
+  </ul>
+
+</div>
+<div id="content">
+    <div class="entry ">
+<div class="comm"><span><a href="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/#comments"> 18 </a></span>
+</div>
+    <h3 class="entrytitle" id="post-5553"> <a href="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/" rel="bookmark">
+      Raspberry Pi GPIO Programming in C      </a> </h3>
+	  <div class="entrymeta">
+        	May 26th, 2018 | Category: <a href="https://www.bigmessowires.com/category/bitbucket/" rel="category tag">Bit Bucket</a> | Author: Steve		</div>
+    <div class="entrybody">
+      <p><img src="https://www.bigmessowires.com/wp-content/uploads/2018/05/Raspberry-GPIO.jpg" alt="" width="600" height="491" class="alignnone size-full wp-image-5564" srcset="https://www.bigmessowires.com/wp-content/uploads/2018/05/Raspberry-GPIO.jpg 600w, https://www.bigmessowires.com/wp-content/uploads/2018/05/Raspberry-GPIO-300x246.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>The Raspberry Pi&#8217;s 40-pin GPIO connector often gets overlooked. Typical Pi projects use the hardware as a very small desktop PC (<a href="https://retropie.org.uk">RetroPie</a>,  <a href="https://pi-hole.net">Pi-hole</a>, media center, print server, etc), and don&#8217;t make any use of general-purpose IO pins. That&#8217;s too bad, because with a little bit of work, the Raspberry Pi can make a powerful physical computing device for many applications. </p>
+<p>&nbsp;<br />
+<strong>Raspberry Pi vs Arduino (and other microcontrollers)</strong></p>
+<p>Why would you want to use a Raspberry Pi instead of an Arduino or other microcontroller (STM32, ATSAM, PIC, Propeller)? There are loads of &#8220;Raspberry Pi vs Arduino&#8221; articles on the web, and in my view almost all of them miss the mark. The Pi is <em>not</em> a better, more powerful Arduino. It&#8217;s a completely different type of device, better at some tasks, but markedly worse at others.</p>
+<p>The Pi is vastly more powerful than something like an Arduino Uno. The latest Pi 3 Model B+ has an 88x faster CPU clock and 500,000x more RAM than the Uno. It also runs a full-fledged Linux operating system, so it&#8217;s much easier to create projects involving high-level functions like networking or video processing. And you can connect a standard keyboard, mouse, and monitor, and use it as a normal computer.</p>
+<p>But the Pi operating system is also a huge weakness in many applications. There&#8217;s no &#8220;instant on&#8221;, because it takes nearly a minute for the device to boot up. There&#8217;s no appliance-like shutoff either &#8211; the Pi must be cleanly shutdown before power is turned off, or else the operating system files may get corrupted. And real-time bit twiddling of GPIO is mostly impossible, because the kernel may swap out your process at any moment, making precise timing unpredictable. </p>
+<p>In theory it&#8217;s possible to do bare-metal programming on the Raspberry Pi, eliminating Linux and its related drawbacks for real-time applications. Unfortunately this doesn&#8217;t seem to be a common practice, and there&#8217;s not much information available about how to do it. So the Pi is probably best for those applications where you need some major CPU horsepower <em>and</em> some kind of GPIO connection to other sensors or equipment, but don&#8217;t need precise real-time behavior or microsecond-level accuracy.</p>
+<p>&nbsp;<br />
+<strong>GPIO and Python?</strong></p>
+<p>If you start Googling for &#8220;Raspberry Pi GPIO programming&#8221;, you&#8217;ll quickly discover that most of the examples use the Python language. In fact, this seems to be the most popular way by far to use GPIO on the Pi. </p>
+<p>I have nothing against Python, but I&#8217;m a C programmer through and through, and the idea of using a high-level language for low-level digital interfaces is unappealing. By one measure, Python is <a href="http://codeandlife.com/2012/07/03/benchmarking-raspberry-pi-gpio-speed/">over 300x slower</a> at Raspberry Pi GPIO manipulation than plain C. I&#8217;m sure there are applications where it&#8217;s OK to throw away 99.7% of potential performance, but I&#8217;ll be sticking with C, thank you very much.</p>
+<p>I spent a little time researching four different methods of Raspberry Pi GPIO manipulation in C. This involved reading documentation and data sheets, and examining the source code of various libraries. I haven&#8217;t yet tried writing any code using these methods, so take my impressions accordingly.</p>
+<p>If any of the authors of these C libraries happen to read this &#8211; thank you for your work, and please don&#8217;t be offended by any criticisms I may make. I understand that creating an IO library necessarily involves many tradeoffs between simplicity, speed, flexibility, and ease of use, and not everyone will agree on the best path. </p>
+<p>&nbsp;<br />
+<strong>Direct Register Control &#8211; No Library</strong></p>
+<p>The GPIO pins on the Raspberry Pi can be directly accessed from C code, similarly to how it&#8217;s done on the ATMEGA or other microcontrollers. A few different memory-mapped control registers are used to configure the pins, and to read input and set output values. The only big difference is that the code must first call mmap() on /dev/mem or /dev/gpiomem, to ask the kernel to map the appropriate region of physical memory into the process&#8217;s virtual address space. If that means nothing to you, don&#8217;t worry about it. Just copy a couple of dozen lines of code into your program&#8217;s startup routine to do the mmap, and the rest is fairly easy. </p>
+<p>Here&#8217;s an example of reading the current value of GPIO 7:</p>
+<div style="margin-left:20px; background:#cccccc;">
+<pre>if (gpio_lev & (1<<7))
+  // pin is high
+else
+  // pin is low</pre>
+</div>
+<p>Just test a bit at a particular memory address - that's it. This looks more-or-less exactly like reading GPIO values on any other microcontroller. <em>gpio_lev</em> is a memory-mapped register whose address was previously determined using the mmap() call during program initialization. See section 6 of the <a href="https://www.raspberrypi.org/app/uploads/2012/02/BCM2835-ARM-Peripherals.pdf">BCM2835 Peripherals Datasheet</a> for details about the GPIO control registers.</p>
+<p>Setting the output value of GPIO 7 is similarly easy:</p>
+<div style="margin-left:20px; background:#cccccc;">
+<pre>gpio_set |= (1<<7); // sets pin high
+
+gpio_clr |= (1<<7); // sets pin low
+</pre>
+</div>
+<p>Using other control registers, it's possible to enable pull-up and pull-down resistors, turn on special pin functions like SPI, and change the output drive strength.</p>
+<p>Watch out for out-of-order memory accesses! The datasheet warns that the system doesn't always return data in order. This requires special precautions and the use of memory barrier instructions. For example:</p>
+<div style="margin-left:20px; background:#cccccc;">
+<pre>a_status = *pointer_to_peripheral_a; 
+b_status = *pointer_to_peripheral_b;</pre>
+</div>
+<p>Without precautions, the values ending up in the variables a_status and b_status can be swapped. If I've understood the datasheet correctly, a similar risk exists for GPIO writes. Although data always arrives in order at a single destination, two different updates to two different peripherals may not be performed in the same order as the code. These out-of-order concerns were enough to discourage me from trying direct register IO with my programs.</p>
+<p>&nbsp;<br />
+<strong>Wiring Pi</strong></p>
+<p><a href="http://wiringpi.com">WiringPi</a> wraps the Raspberry Pi GPIO registers with an API that will look very familiar to Arduino users: <em>digitalRead(pin), digitalWrite(pin, value)</em>. It's a C library, but third parties have added wrappers for Python and other high-level languages. From a casual search of the web, it looks like the most popular way to do Raspberry Pi GPIO programming in C.</p>
+<p>WiringPi appears to be designed with flexibility in mind, at the expense of raw performance. Here's the implementation of digitalRead():</p>
+<div style="margin-left:20px; background:#cccccc;">
+<pre>int digitalRead (int pin)
+{
+  char c ;
+  struct wiringPiNodeStruct *node = wiringPiNodes ;
+
+  if ((pin & PI_GPIO_MASK) == 0)		// On-Board Pin
+  {
+    /**/ if (wiringPiMode == WPI_MODE_GPIO_SYS)	// Sys mode
+    {
+      if (sysFds [pin] == -1)
+	return LOW ;
+
+      lseek  (sysFds [pin], 0L, SEEK_SET) ;
+      read   (sysFds [pin], &c, 1) ;
+      return (c == '0') ? LOW : HIGH ;
+    }
+    else if (wiringPiMode == WPI_MODE_PINS)
+      pin = pinToGpio [pin] ;
+    else if (wiringPiMode == WPI_MODE_PHYS)
+      pin = physToGpio [pin] ;
+    else if (wiringPiMode != WPI_MODE_GPIO)
+      return LOW ;
+
+    if ((*(gpio + gpioToGPLEV [pin]) & (1 << (pin &#038; 31))) != 0)
+      return HIGH ;
+    else
+      return LOW ;
+  }
+  else
+  {
+    if ((node = wiringPiFindNode (pin)) == NULL)
+      return LOW ;
+    return node->digitalRead (node, pin) ;
+  }
+}</pre>
+</div>
+<p>That's a lot of code to accomplish what could be done by testing a bit at an address. To be fair, this code does a lot more, such as an option to access GPIO using sysfs (doesn't require root?) instead of memory-mapped registers, and pin number remapping. It also adds a concept of on-board and off-board pins, so that pins connected to external GPIO expanders can be controlled identically to pins on the Raspberry Pi board itself.</p>
+<p>From a brief glance through the source code, I couldn't find any use of memory barriers. I'm not sure if the author determined that they're not necessary somehow, or if out-of-order read/writes are a risk.</p>
+<p>WiringPi also includes a command line program called gpio that can be used from scripts (or interactively). It won't be high-performance, but it looks like a great tool for testing, or for when you just need to switch on an LED or something else simple.</p>
+<p>&nbsp;<br />
+<strong>pigpio</strong></p>
+<p><img src="https://www.bigmessowires.com/wp-content/uploads/2018/05/pig-full-body.ngsversion.1396530612836.jpg" alt="" width="400" height="225" class="alignnone size-full wp-image-5561" srcset="https://www.bigmessowires.com/wp-content/uploads/2018/05/pig-full-body.ngsversion.1396530612836.jpg 400w, https://www.bigmessowires.com/wp-content/uploads/2018/05/pig-full-body.ngsversion.1396530612836-300x169.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" /></p>
+<p><a href="http://abyz.me.uk/rpi/pigpio/index.html">pigpio</a> is another GPIO library, and appears more geared towards simplicity and speed. And yes, it was quite a while before I recognized the name was Pi GPIO, and not Pig Pio. 🙂</p>
+<p>Here's pigpio's implementation of gpioRead():</p>
+<div style="margin-left:20px; background:#cccccc;">
+<pre>#define BANK (gpio>>5)
+#define BIT  (1<<(gpio&#038;0x1F))
+
+int gpioRead(unsigned gpio)
+{
+   DBG(DBG_USER, "gpio=%d", gpio);
+
+   CHECK_INITED;
+
+   if (gpio > PI_MAX_GPIO)
+      SOFT_ERROR(PI_BAD_GPIO, "bad gpio (%d)", gpio);
+
+   if ((*(gpioReg + GPLEV0 + BANK) & BIT) != 0) return PI_ON;
+   else                                         return PI_OFF;
+}</pre>
+</div>
+<p>Here there's no pin number remapping or other options. The function does some error checking to ensure the library is initialized and the pin number is valid, but otherwise it's just a direct test of the underlying register.</p>
+<p>As with WiringPi, I did not see any use of memory barriers in the source code of pigpio.</p>
+<p>&nbsp;<br />
+<strong>bcm2835</strong></p>
+<p><a href="http://www.airspayce.com/mikem/bcm2835/">bcm2835</a> is a third option for C programmers looking for a Raspberry Pi GPIO library. It appears to have the most thorough and well-written documentation, but also seems to be the least commonly used library of the three that I examined. This may be a result of its name, which is the name of the SoC used on the Raspberry Pi. It's somewhat difficult to find web discussion about this library, as opposed to the chip with the same name.</p>
+<p>Like pigpio, bcm2835 appears more focused on providing a thin and fast interface to the Pi GPIO, without any extra options. Here's the implementation of bcm2835_gpio_lev(), the oddly-named read function:</p>
+<div style="margin-left:20px; background:#cccccc;">
+<pre>uint32_t bcm2835_peri_read(volatile uint32_t* paddr)
+{
+    uint32_t ret;
+    if (debug)
+    {
+		printf("bcm2835_peri_read  paddr %p\n", (void *) paddr);
+		return 0;
+    }
+    else
+    {
+       __sync_synchronize();
+       ret = *paddr;
+       __sync_synchronize();
+       return ret;
+    }
+}
+
+uint8_t bcm2835_gpio_lev(uint8_t pin)
+{
+    volatile uint32_t* paddr = bcm2835_gpio + BCM2835_GPLEV0/4 + pin/32;
+    uint8_t shift = pin % 32;
+    uint32_t value = bcm2835_peri_read(paddr);
+    return (value & (1 << shift)) ? HIGH : LOW;
+}</pre>
+</div>
+<p>The pin number is constrained to the range 0-31, but otherwise there's no error checking. The actual read of the GPIO register is performed by a helper function that includes memory barriers before and after the read.</p>
+<p>&nbsp;<br />
+<strong>Impressions</strong></p>
+<p>For my purposes, I would probably choose pigpio or bcm2835, since I prefer a thin API over one with extra features I don't use. Of those two options, I'd tentatively choose bcm2835 due to the format of its documentation and its use of memory barriers. I wish I understood the out-of-order risk better, so I could evaluate whether the apparent absence of memory barriers in the other libraries is a bug or a feature.</p>
+<p>Any analysis that looks at just a single API function is clearly incomplete - if you're planning to do Rasbperry Pi GPIO programming, it's certainly worth a deeper look at the many other capabilities of these three libraries. For example, they differ in their support for handling interrupts, or byte-wide reads and writes, or special functions like SPI and hardware PWM. </p>
+<p>Did I miss any other C programming options for Raspberry Pi GPIO, or overlooked something else obvious? Leave a note in the comments. </p>
+      
+<a href="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/#comments" class="comments-link" >Read 18 comments and join the conversation</a>&nbsp;      
+    </div>
+    <!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/"
+    dc:identifier="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/"
+    dc:title="Raspberry Pi GPIO Programming in C"
+    trackback:ping="https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/trackback/" />
+</rdf:RDF>	-->
+  </div>
+  <div id="commentblock">
+  <!--comments area-->
+    <h2 id="comments">
+    18 Comments so far  </h2>
+  <ol id="commentlist">
+        <li class="alt" id="comment-235161">
+<img alt='' src='https://secure.gravatar.com/avatar/d4fcf33e9c2ee7f0193913dbe0531d45?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d4fcf33e9c2ee7f0193913dbe0531d45?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+         &nbsp;-&nbsp;May 27th, 2018 
+        8:49 pm		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>About your first example of memory access order (“Watch out for out-of-order memory accesses!”): Are you sure that the contents of a_status and b_status can be swapped? Sure, the order of the actual accesses may be swapped, so peripheral_b may be read before peripheral_a, but if the contents got swapped, that would be completely broken IMHO.</p>
+<p>Another thing to watch out for is the ordering between read and write accesses, which is also not always guaranteed.</p>
+</div>    </li>
+            <li class="standard" id="comment-235162">
+<img alt='' src='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='https://www.bigmessowires.com' rel='external nofollow' class='url'>Steve</a>&nbsp;-&nbsp;May 27th, 2018 
+        9:04 pm		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext-admin'><p>That example with a_status and b_status was copy-pasted directly from the Broadcom datasheet, page 7. I agree it seems very strange.</p>
+</div>    </li>
+            <li class="alt" id="comment-235163">
+<img alt='' src='https://secure.gravatar.com/avatar/543444d4ae037d81e4776ce8f93ec9e4?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/543444d4ae037d81e4776ce8f93ec9e4?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='http://www.neighborhoodtechie.com' rel='external nofollow' class='url'>Tim</a>&nbsp;-&nbsp;May 28th, 2018 
+        5:03 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>Haven&#8217;t run across the swap problem as my projects tend to be small. I do like the &#8220;no library&#8221; or &#8220;custom library&#8221; approach as it minimizes what needs to be changed when porting code from (example) the RPi to a Cubietruck or BBB.</p>
+<p>One big annoyance is with the spec sheets themselves. Some are only available in Chinese or German. Some assume that you already know the shortcomings of the chip. If you&#8217;re working with someone&#8217;s breakout board, you have to dig to find out what parts of the spec sheet are N/A because the builder specifically hardwired them out (e.g., most of the available FM receiver breakout boards only support I2C (no SPI)). Etc.</p>
+</div>    </li>
+            <li class="standard" id="comment-235164">
+<img alt='' src='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='https://www.bigmessowires.com' rel='external nofollow' class='url'>Steve</a>&nbsp;-&nbsp;May 28th, 2018 
+        8:00 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext-admin'><p>Yes, and speaking of spec sheets, I was surprised by the number of typos and general informality of the Broadcom datasheet for the BCM2835 peripherals (see link in the original post). Every other datasheet I&#8217;ve ever read was a very professional document, but this one is full of grammar errors like &#8220;each bank has its’ own interrupt line&#8221; and &#8220;it is theoretical possible&#8221;, as well as chatty side-comments like &#8220;Not a good idea!&#8221; I could understand if the grammar issues were English translations problems, but Broadcom is a US company, and the datasheet reads a bit like a hastily-written college term paper.</p>
+<p>As for datasheets that are only available in other languages, I&#8217;ve found that Google Translate does a surprisingly good job translating technical datasheets from Chinese. I was recently reading one such translated datasheet that kept referring to the &#8220;caterpillar effect&#8221;, which I assumed was some kind of amusing translation error. But in reality it&#8217;s a visual artifact of LED matrix refresh, and &#8220;caterpillar effect&#8221; is exactly what it&#8217;s called in English. Score Google Translate 1, me 0.</p>
+</div>    </li>
+            <li class="alt" id="comment-235165">
+<img alt='' src='https://secure.gravatar.com/avatar/22301e684e117ac993c69cf8d1602a2c?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/22301e684e117ac993c69cf8d1602a2c?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        asdf&nbsp;-&nbsp;May 28th, 2018 
+        11:35 pm		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>If peripherals are mmap&#8217;ed as regular memory (eg. via /dev/mem), you will get all the joys of caching and weak ordering. So memory accesses can indeed be reordered, you may end up reading/writing more memory locations than intended and so forth. There&#8217;s unfortunately no flag for mmap to map the memory as I/O (uncacheable, strongly ordered), you need a kernel driver for that. If there&#8217;s no existing driver, the Linux UIO driver lets you define a generic device in the device tree, without writing any code.</p>
+</div>    </li>
+            <li class="standard" id="comment-235166">
+<img alt='' src='https://secure.gravatar.com/avatar/e3e7ce6e067db98229b3472e72d3cb28?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e3e7ce6e067db98229b3472e72d3cb28?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        John&nbsp;-&nbsp;May 29th, 2018 
+        3:10 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>&#8220;if the contents got swapped, that would be completely broken IMHO&#8221;</p>
+<p>I agree.</p>
+<p>Normally, out-of-order memory access just means that the example code might get peripheral a&#8217;s data from a later time than peripheral b&#8217;s, despite reading from it first.  Most of the time that&#8217;s not a problem, so you don&#8217;t bother with barriers.</p>
+<p>But not in this case (if I&#8217;m reading the datasheet correctly, and it&#8217;s insane enough that I still have a small hope that it has just been badly translated).  Peripheral access goes over some special bus, and accesses of different peripherals aren&#8217;t guaranteed to be in order.  In the example, a_status might end up with peripheral b&#8217;s data.</p>
+<p>Data for a single peripheral stays in order, so as long as you stick with a single peripheral you&#8217;re OK.  But access another, and you must have a barrier.  And hope that the person who wrote any interrupt handlers that might be active at the time put barriers in too.</p>
+</div>    </li>
+            <li class="alt" id="comment-235167">
+<img alt='' src='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='https://www.bigmessowires.com' rel='external nofollow' class='url'>Steve</a>&nbsp;-&nbsp;May 29th, 2018 
+        7:49 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext-admin'><p>This out-of-order GPIO stuff for RPi is fascinating and bewildering, and I&#8217;ve been reading more about it. Thanks to asdf and John May as well. Some tentative conclusions:</p>
+<p>1. The GPIO memory is not cached (at least not for reads). If it were, correct use of the GPIO pins would be impossible. All subsequent reads of a GPIO pin&#8217;s state would return the cached value from the first read, instead of the current pin state.</p>
+<p>2. The potential for out-of-order reads getting assigned to the wrong registers is real (the a_status and b_status example above), but exists only when reading from two <strong>different</strong> peripherals (like GPIO and a hardware Timer/Counter or UART). GPIO is a single peripheral, so out-of-order reads aren&#8217;t a problem and memory barriers aren&#8217;t generally necessary for code that only uses GPIO. Similarly, out-of-order writes aren&#8217;t a problem either when writing strictly to GPIO.</p>
+<p>My mental model (which could be totally wrong) is that each peripheral maintains a FIFO of read requests and write requests from the ARM core, and the FIFO entries are always handled in order. But the different peripherals have their own independent FIFOs, and there&#8217;s no guarantee of ordering across them. The ARM core might issue a read request to peripheral A, then a different read request to peripheral B, and eventually a result will be returned to the core, but <strong>it won&#8217;t know if the result came from A or B</strong>.</p>
+</div>    </li>
+            <li class="standard" id="comment-235173">
+<img alt='' src='https://secure.gravatar.com/avatar/445bb3c800f8da0f601a2ca4f60adc78?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/445bb3c800f8da0f601a2ca4f60adc78?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        Loïc&nbsp;-&nbsp;June 2nd, 2018 
+        6:59 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>A good intro to memory barriers and other troubles with compiler and concurrency is the following paper:<br />
+What every systems programmer should know about concurrency, Matt Kline<br />
+<a href="https://bitbashing.io/concurrency-primer.html" rel="nofollow">https://bitbashing.io/concurrency-primer.html</a></p>
+</div>    </li>
+            <li class="alt" id="comment-235174">
+<img alt='' src='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='https://www.bigmessowires.com' rel='external nofollow' class='url'>Steve</a>&nbsp;-&nbsp;June 2nd, 2018 
+        11:10 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext-admin'><p>I must admit I still don&#8217;t understand it. That paper talks almost exclusively about problems arising from multi-threaded code. What I don&#8217;t understand how is such concurrency problems can occur in a single thread, running on a single core. Section 7 of the paper does mention &#8220;weakly ordered hardware&#8221; but does nothing to explain it at the hardware level, or to describe what problems might arise if memory barriers aren&#8217;t used.</p>
+<p>I can understand that if I write some single-threaded code like:</p>
+<p>int foo = *pFoo;<br />
+int bar = *pBar;</p>
+<p>those two assignments might not happen in program order. Bar might actually get loaded from memory before Foo, but that doesn&#8217;t really matter. The same goes for writes, where Bar might be written before Foo, but single-threaded code doesn&#8217;t care.</p>
+<p>What I can&#8217;t understand is how the above code could produce the *wrong result*, with the value at pBar somehow getting assigned to the variable Foo. That&#8217;s what the Broadcom datasheet seems to say could happen, but I can&#8217;t visualize what kind of hardware design would make that possible. It just seems completely broken. Programming in such an environment seems like it would be virtually impossible, without having to surround every single statement with a memory barrier.</p>
+</div>    </li>
+            <li class="standard" id="comment-235178">
+<img alt='' src='https://secure.gravatar.com/avatar/46526124e81df70dbd31fa7880d7cb5c?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/46526124e81df70dbd31fa7880d7cb5c?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        Steven Clark&nbsp;-&nbsp;June 3rd, 2018 
+        8:18 pm		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>If you really need speed and access to memory mapped IO registers you should probably just build an upper portion of your application into a kernel module.<br />
+mach/platform.h provides the GPIO_BASE address for whichever version of the SOC your using.  And the high resolution timer interface should let you get by without figuring out how the interrupt vector&#8217;s being used for some applications.  It&#8217;s certainly better than running on busy loops or jiffy-precision timers (unless you can get a DMA system driving your peripheral registers, I haven&#8217;t yet, maybe in the future)</p>
+<p>linux/miscdevice.h makes it easy to get one or more character devices in /dev</p>
+<p>Breaking the whole permission system to give a user space process access to all of memory kinda voids the whole idea of having an OS or security of any sort.</p>
+</div>    </li>
+            <li class="alt" id="comment-235341">
+<img alt='' src='https://secure.gravatar.com/avatar/1e624a8011aa113c6a59a6a9a81c8508?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1e624a8011aa113c6a59a6a9a81c8508?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        Plank György&nbsp;-&nbsp;October 12th, 2018 
+        6:17 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>Last sentence at the end of the 7. page of the Broadcom datasheet:<br />
+\&#8221;The only time write data can arrive out-of-order is if two different peripherals are connected to the same external equipment.\&#8221;</p>
+<p>That means to me that the case should be something like reading a sensor both by GPIO and USB. For me it doesn\&#8217;t look like a risk I wouldn\&#8217;t deal with in a non-industrial project.</p>
+</div>    </li>
+            <li class="standard" id="comment-235416">
+<img alt='' src='https://secure.gravatar.com/avatar/911545d5d5bb2dbbfe901fe05e8edbea?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/911545d5d5bb2dbbfe901fe05e8edbea?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        Jakob Stark&nbsp;-&nbsp;December 26th, 2018 
+        5:25 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>All these libraries (except wiringpi in the sys mode) use direct access to the memory mapped hardware registers of the soc, form USERSPACE. Thats not how things normally should work. The reason an operating system has got a kernel is to hide hardware specific details from userspace and provide (via device drivers) an api for programs and libraries running in userspace. While all the three libraries mentioned above may work, I would strongly recommend to use a gpio device driver (probably with a library). Fortunately there is a gpio driver for the BCM2835 in the Linux Kernel. The corresponding character device is located at /dev/gpiochip0. There is also a user space library in the debian package sources named libgpiod. This library simplifies the use of /dev/gpiochip0 and has a doxygen documentation available. The biggest advantage over the libraries mentioned above is, that it is platform and device independent. No matter if you use gpio pins of the bcm2385 or another gpio controller wired to the pi via e.g. i2c, as long as there is a device driver for your gpio chip it works aut of the box.</p>
+</div>    </li>
+            <li class="alt" id="comment-235831">
+<img alt='' src='https://secure.gravatar.com/avatar/82c6694b65d26389c8bad7c02d7605eb?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/82c6694b65d26389c8bad7c02d7605eb?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        val&nbsp;-&nbsp;July 16th, 2019 
+        1:27 pm		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>Thank you for this excellent article. Got here trying to find something more efficient and thin to access RPi GPIO, more like among the lines you write your preferences are as well. However we often forget what was the main purpose of Raspberry Pi and why it is still left hanging in between worlds as a mainly educational/experimental/builder gadget only. If we want to experiment with it then everything goes. From direct access to Pi&#8217;s regs to canonical kernel drivers, everything is fine to play with as long as it fits your use case. I for one I would still go with bcm2835, even now in the days of libgpiod. </p>
+<p>As for memory reordering, things are not that bad. In a few words the compiler will take care of &#8220;most&#8221; of the things for you. Your single threaded binary will be guaranteed to run as you expect. But if we want more efficiency, multithreading and we get closer to the hardware we will have to deal with reordering, be that the one the CPU does at runtime or the one that the compiler do during code optimization.</p>
+</div>    </li>
+            <li class="standard" id="comment-235914">
+<img alt='' src='https://secure.gravatar.com/avatar/21e66d325b299e3572eb134c4a3e5915?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/21e66d325b299e3572eb134c4a3e5915?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='https://www.chienlit.com' rel='external nofollow' class='url'>Stéphane</a>&nbsp;-&nbsp;August 24th, 2019 
+        9:57 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>Thank you for this article, and the links provided by everyone. Very useful.</p>
+</div>    </li>
+            <li class="alt" id="comment-236285">
+<img alt='' src='https://secure.gravatar.com/avatar/16fddfdfc365f6e884a9991794edfca4?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/16fddfdfc365f6e884a9991794edfca4?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        Petros&nbsp;-&nbsp;August 20th, 2020 
+        1:44 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>Hey, nice review. I understand that I come here a little late, but I want to know if these libraries can be used with gpio connected to pc with usb. </p>
+<p>I purchased an adafruit adapter usb to gpio/spi and I don&#8217;t know how to use it. None of these libraries seem to work since the programs return with errors from initializing functions</p>
+</div>    </li>
+            <li class="standard" id="comment-236286">
+<img alt='' src='https://secure.gravatar.com/avatar/911545d5d5bb2dbbfe901fe05e8edbea?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/911545d5d5bb2dbbfe901fe05e8edbea?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        Jakob Stark&nbsp;-&nbsp;August 20th, 2020 
+        2:43 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>@Petros all of the libraries described above are specifically tailored to use the raspberry pi hardware. Also the raspberry pi gpios can be controlled directly through memory registers. On your PC this will not work for sure as you are on a totally different system and your gpio adapter is connected via usb. If you want to use a usb gpio adapter (i suppose on linux) you probably have to install a usb driver for your specific adapter. If you are lucky such a driver may already be enabled in your kernel. Then you can use a userspace library like e.g. libgpiod to control your gpios.</p>
+</div>    </li>
+            <li class="alt" id="comment-240501">
+<img alt='' src='https://secure.gravatar.com/avatar/2341d1f9aa71ab60c4015d83852d81c2?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2341d1f9aa71ab60c4015d83852d81c2?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        salty&nbsp;-&nbsp;October 7th, 2021 
+        4:50 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext'><p>I found your analysis of Arduino / RPi to be interesting. I&#8217;m working on an application where timing in the double or even low triple digit ms range is sufficient, but loss of control is unacceptable. I&#8217;m occasionally seeing an Arduino go out to lunch and I&#8217;m concerned that due to it&#8217;s single threaded nature there&#8217;s no way to mitigate that risk. While the linux kernel and the baggage it brings certainly adds latency concerns, the ability to have threads running watchdog functions in my use case is leading me to use RPi instead of Arduino for this project.</p>
+</div>    </li>
+            <li class="standard" id="comment-240508">
+<img alt='' src='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c0a1715d6a0296d03da1bb54555db681?s=96&amp;d=mm&amp;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />      <div class="commentname">
+        <a href='https://www.bigmessowires.com' rel='external nofollow' class='url'>Steve</a>&nbsp;-&nbsp;October 7th, 2021 
+        8:00 am		 
+		 
+		 
+		 
+        </div>
+            <div class='commenttext-admin'><p>The original blog post is from 2018, so the RPi GPIO options have probably changed since then. Whatever tool gets the job done is good enough, whether that&#8217;s RPi or Arduino or STM32 or something else. But I&#8217;d be surprised if your application &#8220;going out to lunch&#8221; is caused by its single thread; it should be the opposite. On a bare-metal platform like Arduino there&#8217;s no other code running besides your own application, so if it becomes bogged down unresponsive then it must be due to an issue with your own code that you can troubleshoot and fix. Most microcontrollers also have a hardware watchdog peripheral that you can configure to reset the mcu if the code accidentally gets stuck in an infinite loop somewhere.</p>
+</div>    </li>
+          </ol>
+      <!--comments form -->
+  <h2>Leave a reply. For customer support issues, please use the Customer Support link instead of writing comments.</h2>
+    <div id="commentsform">
+    <form action="https://www.bigmessowires.com/wp-comments-post.php" method="post" id="commentform">
+            <p>
+        <input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+        <label for="author"><small>
+        name                </small></label>
+      </p>
+      <p>
+        <input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+        <label for="email"><small>
+        email        (
+        will not be shown        )
+                </small></label>
+      </p>
+      <p>
+        <input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+        <label for="url"><small>
+        website        </small></label>
+      </p>
+            <!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+      <p>
+        <textarea name="comment" id="comment" cols="50" rows="10" tabindex="4" placeholder=""></textarea>
+      </p>
+      <!-- BEGIN: subscribe to comments reloaded --><p><label for='subscribe-reloaded'><input style='width:30px' type='checkbox' name='subscribe-reloaded' id='subscribe-reloaded' value='yes' /> Notify me of followup comments via e-mail. You can also <a href='/comment-subscriptions?srp=5553&amp;sra=s'>subscribe</a> without commenting.</label></p><!-- END: subscribe to comments reloaded -->
+      <p>
+        <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+        <input type="hidden" name="comment_post_ID" value="5553" />
+      </p>
+      <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5416738b80" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="177"/></p>    </form>
+  </div><!--commentsform-->
+    </div><!--commentblock-->
+    <p>
+      </p>
+</div>
+<div style="clear: both;"></div>
+<!-- The main column ends  -->
+<!-- begin footer -->
+<!-- Powered by WPtouch: 3.8.2 --><script type='text/javascript' src='https://www.bigmessowires.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5'></script>
+<script type='text/javascript' src='https://www.bigmessowires.com/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+</body>
+</html>
