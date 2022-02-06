@@ -49,5 +49,20 @@ then we will free both the structure and create a new structure
 and string with the size of same so Linked list will allocate
 that free memory LIFO manner
 
+Now we can use struct 3 or struct 2 to manipulate struct 1.
 
-secondly we have bigger
+So we can read and write in memory any where we want uptil
+memory region has the permission to read and write.
+
+
+secondly we have bigger chunks of memory that are stored in
+doubly linked list which has forward and backward pointer
+
+At the first allocation of two big chunks of 2000 bytes
+It will initialize the double linked list which is
+pointing to the main arena and which is pointing 
+to library address so that will leak the library 
+offset 
+
+we can find some index from stack address in library address
+so we can jump from library offset to the stack offset
