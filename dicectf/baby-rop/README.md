@@ -65,6 +65,15 @@ So we can read and write in memory any where we want uptil
 memory region has the permission to read and write.
 
 
+>   new.create_safe_string(0, 100, b"")
+>   new.create_safe_string(1, 100, b"")
+>
+>   new.free_safe_string(0)
+>   new.free_safe_string(1)
+>
+>   new.create_safe_string(2, 16, b"")
+
+
 secondly we have bigger chunks of memory that are stored in
 doubly linked list which has forward and backward pointer
 
