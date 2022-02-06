@@ -1,5 +1,11 @@
 # DiceCTF: interview-opportunity
-### (Solution)[https://github.com/elliot-star/ctf/edit/main/dicectf/interview_opportunity/exploit.py]
+### [Solution](https://github.com/elliot-star/ctf/edit/main/dicectf/interview_opportunity/exploit.py)
+
+## High Level Plan
+- Do stack over flow by byte 
+- Leak library address from one byte overflow
+- Call system with argument "/bin/sh"
+
 binary allocates buffer of 10 bytes and read input 70 bytes 
 So we can overwrite the stuff on binary and program read
 same buffer with puts that means we can read arbitrary 
