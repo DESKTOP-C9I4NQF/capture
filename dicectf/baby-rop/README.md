@@ -1,9 +1,10 @@
 babyrop
-High Level Plan
+# High Level Plan
 program pretty much checking all things except It is keeping
 dangling pointer when our string and structure are been freed
 so our task it to overlap the pointer in order control size
 and address of structure.
+
 
 As we already know that tcache will hijack the small chuncks
 and put it in singly linked list for fast access. So we are
@@ -11,6 +12,15 @@ going to Create two structure which will query size of 16
 bytes and allocated memory is given to us is 32 bytes and
 then we will query string of 100 bytes to mismatch size of
 structure
+
+# Plan Execution
+> Overlap pointers of small chunks to manipulate memory
+> From Big chunks leak address of main arena (near library)
+> leak address of stack
+> Do ropping
+
+
+## Diagram
 
 ```
  dangling          dangling 
