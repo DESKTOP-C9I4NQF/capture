@@ -14,12 +14,12 @@ memory up to '\0' byte.
 
 First approach that come in my mind is to reuse the same
 code from .text region that will not help us for leaking
-address as library and stack has aslr enable, next
+library address as stack has aslr enable, next
 approach is to execute main again by calling _libc_start_main
-which will result into leak of address and also will read
+which will result into leak of library address and also will read
 buffer again and we do bufferoverflow again.
 
-With the help of rr I recorded who program state and go
+With the help of rr I recorded who program state and go to
 reverse instruction inorder to get last byte of _libc_start_main
 which calls main.
 
