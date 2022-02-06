@@ -25,7 +25,7 @@ structure
 ```
  dangling          dangling 
  pointer           poinnter
- of struct 1       of struct 2
+ of struct 0       of struct 1
     |                |
     v                v
  ----------        ----------
@@ -37,20 +37,20 @@ structure
      |                |    
      |                |    
  allocated         allocated    
-  string            struct 3
- for struct 3      
+  string            struct 2
+ for struct 2      
  
  
  dangling pointer
- of struct 2
+ of struct 1
        -------------------------------
        |                             |
-       | struct 3                    |
+       | struct 2                    |
        | {                           |
        |    length;                  |
        |    string;  /* dangling     |
        |               pointer of    |
-       | };            struct 1 */   |
+       | };            struct 0 */   |
        |                             |
        -------------------------------
 ```
@@ -59,7 +59,7 @@ then we will free both the structure and create a new structure
 and string with the size of same so Linked list will allocate
 that free memory LIFO manner
 
-Now we can use struct 3 or struct 2 to manipulate struct 1.
+Now we can use struct 2 or struct 1 to manipulate struct 0.
 
 So we can read and write in memory any where we want uptil
 memory region has the permission to read and write.
