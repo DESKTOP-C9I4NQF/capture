@@ -86,13 +86,6 @@ pointing to the main arena and which is pointing
 to library address so that will leak the library 
 offset 
 
-we can find some index from stack address in library address
-so we can jump from library offset to the stack offset
-
-We have to leak both stack local address and base address
-Stack local address will change as environment we need
-to leak to library pointers to stack
-
 
 ## Leaking Library base
 >   new.create_safe_string(3, 2000, b"")
@@ -107,6 +100,13 @@ to leak to library pointers to stack
 >
 >   library_base = get_library_offset(new.read_safe_string(5))
 
+
+we can find some index from stack address in library address
+so we can jump from library offset to the stack offset
+
+We have to leak both stack local address and base address
+Stack local address will change as environment we need
+to leak to library pointers to stack
 
 then we are good to go we will overwrite the stack
 return address with our address.
