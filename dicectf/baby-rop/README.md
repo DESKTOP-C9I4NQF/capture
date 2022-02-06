@@ -12,36 +12,38 @@ bytes and allocated memory is given to us is 32 bytes and
 then we will query string of 100 bytes to mismatch size of
 structure
 
-> dangling          dangling 
-> pointer           poinnter
-> of struct 1       of struct 2
->    |                |
->    v                v
-> ---------        ---------
-> |       |        |       |
-> |memory |        |memory |
-> |       |        |       |
-> ---------        ---------
->     ^                ^    
->     |                |    
->     |                |    
-> allocated         allocated    
->  string            struct 3
-> for struct 3      
-> 
-> 
-> dangling pointer
-> of struct 2
->       -------------------------------
->       |                             |
->       | struct 3                    |
->       | {                           |
->       |    length;                  |
->       |    string;  /* dangling     |
->       |               pointer of    |
->       | };            struct 1 */   |
->       |                             |
->       -------------------------------
+```
+ dangling          dangling 
+ pointer           poinnter
+ of struct 1       of struct 2
+    |                |
+    v                v
+ ---------        ---------
+ |       |        |       |
+ |memory |        |memory |
+ |       |        |       |
+ ---------        ---------
+     ^                ^    
+     |                |    
+     |                |    
+ allocated         allocated    
+  string            struct 3
+ for struct 3      
+ 
+ 
+ dangling pointer
+ of struct 2
+       -------------------------------
+       |                             |
+       | struct 3                    |
+       | {                           |
+       |    length;                  |
+       |    string;  /* dangling     |
+       |               pointer of    |
+       | };            struct 1 */   |
+       |                             |
+       -------------------------------
+```
 
 then we will free both the structure and create a new structure
 and string with the size of same so Linked list will allocate
