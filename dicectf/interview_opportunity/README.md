@@ -1,5 +1,5 @@
-DiceCTF: interview-opportunity
-
+# DiceCTF: interview-opportunity
+### (Solution)[https://github.com/elliot-star/ctf/edit/main/dicectf/interview_opportunity/exploit.py]
 binary allocates buffer of 10 bytes and read input 70 bytes 
 So we can overwrite the stuff on binary and program read
 same buffer with puts that means we can read arbitrary 
