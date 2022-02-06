@@ -4,6 +4,7 @@
 ## High Level Plan
 - Do stack over flow by byte 
 - Leak library address from one byte overflow
+- Jump to main again then do ropp and
 - Call system with argument "/bin/sh"
 
 binary allocates buffer of 10 bytes and read input 70 bytes 
