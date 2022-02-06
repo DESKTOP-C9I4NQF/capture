@@ -1,5 +1,5 @@
 # DiceCTF: interview-opportunity
-### [Solution](https://github.com/elliot-star/ctf/edit/main/dicectf/interview_opportunity/exploit.py)
+### [Solution](https://github.com/elliot-star/ctf/blob/main/dicectf/interview_opportunity/exploit.py)
 
 ## High Level Plan
 - Do stack over flow by byte 
