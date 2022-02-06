@@ -15,7 +15,7 @@ structure
 
 # Plan Execution
 - Overlap pointers of small chunks to manipulate memory
-- From Big chunks leak address of main arena (near library)
+- From Big chunks to leak address of main arena (near library)
 - leak address of stack
 - Do ropping
 
