@@ -14,10 +14,10 @@ then we will query string of 100 bytes to mismatch size of
 structure
 
 # Plan Execution
-> Overlap pointers of small chunks to manipulate memory
-> From Big chunks leak address of main arena (near library)
-> leak address of stack
-> Do ropping
+- Overlap pointers of small chunks to manipulate memory
+- From Big chunks leak address of main arena (near library)
+- leak address of stack
+- Do ropping
 
 
 ## Diagram
