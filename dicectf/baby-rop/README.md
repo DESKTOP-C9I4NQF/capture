@@ -64,7 +64,6 @@ Now we can use struct 3 or struct 2 to manipulate struct 1.
 So we can read and write in memory any where we want uptil
 memory region has the permission to read and write.
 
-
 ## Overlapping pointers of struct 0 && string of struct 2 
 >  new.create_safe_string(0, 100, b"")
 >
@@ -99,7 +98,6 @@ offset
 >   new.create_safe_string(5, 2000, b"")
 >
 >   library_base = get_library_offset(new.read_safe_string(5))
-
 
 we can find some index from stack address in library address
 so we can jump from library offset to the stack offset
