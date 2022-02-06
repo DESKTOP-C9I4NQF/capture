@@ -76,3 +76,19 @@ offset
 
 we can find some index from stack address in library address
 so we can jump from library offset to the stack offset
+
+We have to leak both stack local address and base address
+Stack local address will change as environment we need
+to leak to library pointers to stack
+
+then we are good to go we will overwrite the stack
+return address with our address.
+
+### Ropping
+- Find gadget's from binary or library
+- Call following functions to read the flag
+1. mprotect to make stack executable then put our shellcode on stack
+2. open function to open the flag file
+3. read function to read the file descriptor
+4. write to write it to stdout i.e. transfered to us via socket
+
