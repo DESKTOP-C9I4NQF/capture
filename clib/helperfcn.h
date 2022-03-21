@@ -30,7 +30,6 @@ void recvuntil(int fild, struct iovec* _iov_inpb, struct iovec* _iov_outb)
         n_bytes++;
       else
         n_bytes = 0;
-      write(STDOUT_FILENO, &context, 1);
     }
   }
   else
@@ -58,4 +57,14 @@ void recvuntil(int fild, struct iovec* _iov_inpb, struct iovec* _iov_outb)
     _iov_outb->iov_base = (void *)bufptr;
   }
 }
+
+
+void hexdump(int fild, char *bufptr, size_t size)
+{
+  for (size_t ind = 0; ind < size; ind++)
+  {
+    dprintf(fild, "\\x%02x", bufptr[ind]);
+  }
+}
+
 #endif
