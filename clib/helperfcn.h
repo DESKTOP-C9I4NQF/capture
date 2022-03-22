@@ -59,12 +59,45 @@ void recvuntil(int fild, struct iovec* _iov_inpb, struct iovec* _iov_outb)
 }
 
 
-void hexdump(int fild, char *bufptr, size_t size)
+/*
+ * dumps hex value from
+ * in supplied file desciptor
+ * from given buffer and size
+ * bytes
+ */
+void hexdump(int fild, unsigned char *bufptr, size_t size)
 {
   for (size_t ind = 0; ind < size; ind++)
   {
     dprintf(fild, "\\x%02x", bufptr[ind]);
   }
+}
+
+
+// reverses endian of a 64 bit integer
+void reverse_endian(uint64_t *inp_little)
+{
+  uint8_t* buf = (uint8_t*)inp_little;
+  uint8_t temp;
+
+  for (uint8_t i = 0; i < 4; i++)
+  {
+    temp = buf[i];
+    buf[i] = buf[7-i];
+    buf[7-i] = temp;
+  }
+}
+
+/*
+ * ptrace_memorydump is used to read nbytes froom
+ * memory and store in the buf pointer 
+ */
+void ptrace_dumpMemory(const pid_t child_pid, size_t* bufptr, const size_t nbytes, const size_t address)
+{
+  const size_t size = nbytes / 8;
+
+  for (size_t i = 0; i < size; i++)
+    bufptr[i] = ptrace(PTRACE_PEEKTEXT, child_pid, address+(i*8), NULL);
 }
 
 #endif
