@@ -42,7 +42,7 @@ void recvuntil(int fild, struct iovec* _iov_inpb, struct iovec* _iov_outb)
     bufptr = malloc(sizeof(char) * 20);
     assert(bufptr != NULL);
 
-    while (read(fild, &context, 1) > 0 && n_bytes < _iov_inpb->iov_len)
+    while (n_bytes < _iov_inpb->iov_len && read(fild, &context, 1) > 0)
     {
       if (context == required_bytes[n_bytes])
         n_bytes++;
