@@ -100,4 +100,29 @@ void ptrace_dumpMemory(const pid_t child_pid, size_t* bufptr, const size_t nbyte
     bufptr[i] = ptrace(PTRACE_PEEKTEXT, child_pid, address+(i*8), NULL);
 }
 
+/*
+ * returns pid of
+ * the child process
+ * with given stdin, stdout,
+ * stderr file descriptors
+ */
+pid_t popen2(const char* prog_name,  
+    int stdin_fd,
+    int stdout_fd,
+    int stderr_fd,
+    )
+{
+  pid_t child_pid;
+  child_pid = fork();
+  if (!child_pid)
+  {
+    dup2(stdin_fd, STDIN_FILENO);
+    dup2(stdout_fd, STDOUT_FILENO);
+    dup2(stderr_fd, STDERR_FILENO);
+
+    execl(prog_name, prog_name, NULL); 
+  }
+  return child_pid;
+}
+
 #endif
