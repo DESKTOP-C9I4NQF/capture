@@ -10,6 +10,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/uio.h>
+#include <sys/ptrace.h>
 
 void recvuntil(int fild, struct iovec* _iov_inpb, struct iovec* _iov_outb)
 {
@@ -106,11 +107,7 @@ void ptrace_dumpMemory(const pid_t child_pid, size_t* bufptr, const size_t nbyte
  * with given stdin, stdout,
  * stderr file descriptors
  */
-pid_t popen2(const char* prog_name,  
-    int stdin_fd,
-    int stdout_fd,
-    int stderr_fd,
-    )
+pid_t popen2(const char* prog_name,  int stdin_fd, int stdout_fd, int stderr_fd)
 {
   pid_t child_pid;
   child_pid = fork();
