@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <unistd.h>
 #include <assert.h>
 #include <sys/user.h>
 #include <sys/ptrace.h>
+#include <sys/wait.h>
+#include <sys/syscall.h>
+
 
 // process info struct contains information process id 
 // of child process and also holds file descriptor that
@@ -13,13 +17,22 @@ struct process_info
 	// child process id
 	pid_t child_pid;
 	int talk_fd[2];
+
+
+    // stores bytes as backup 
+    size_t *bkup_bytes;
+
+    // store required bytes which contains 0xcc 
+    // to sigtrap give control to parent process
+    // to execute
+    size_t *rq_bytes;
 };
 
 void executeCLD(
-		struct process_info* self,			// process info struct
-		const char *prog_name,					// name of program to be executed
-		void (*parent_exec_fcn)(struct process_info*) // parent function that should called 
-		)
+    struct process_info* self,			// process info struct
+    const char *prog_name,					// name of program to be executed
+    void (*parent_exec_fcn)(struct process_info*) // parent function that should called 
+    )
 {
 	int from_child[2], from_parent[2];
 
