@@ -71,6 +71,9 @@ bool memsearch(struct iovec* iov, struct iovec* req)
             return true;
         }
     }
+    
+    // return false when bytes not found
+    return false;
 }
 
 #endif
