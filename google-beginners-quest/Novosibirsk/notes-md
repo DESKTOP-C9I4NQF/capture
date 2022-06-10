@@ -1,0 +1,10 @@
+Novosibirsk - Chemical plant 
+	description: rev
+
+program is forming password my adding 0xCafe to each
+character and then comparing with statically
+stored password on client side
+
+login Password: GoodPassword
+
+flag: CTF{IJustHopeThisIsNotOnShodan}
