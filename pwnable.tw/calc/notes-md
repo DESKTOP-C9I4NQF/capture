@@ -1,0 +1,37 @@
+
+Challenge description
+Have you ever use Microsoft calculator?
+
+
+on found of  mathematical symbol we will allocate
+memory
+
+get_expr -> safe from buffer overflow
+
+promise that next is number if it is not then
+format string -> 
+
+calc creates a tree that stores values for multiplication division
+other stuf but tree of limited size so we can fuck with stack
+
+how to leak canary is by doing what we called it as addition
+
+buffer layouts 
+	symbols are at top
+	canary of parse_expr
+	individual integers
+	then string 
+
+program stores value at the top of the buffer 
+
+So if it is zero number is less that 0 then we will skip it.
+The bug is that it is trying to do calculation by first incrementing
+counter but in case of zero or less than zero then it will not incrementing
+the counter so counter remains the same and we try to put adding sign
+into our sign buffer and from that sign buffer we try to read out
+it but our counter is pointing to itself. so it will overwrite itself.
+
+The main point of this program is that it totally depends on signs
+so that it don't care about counter of location where it is been stored.
+
+programming is overwriting stack above the memory region

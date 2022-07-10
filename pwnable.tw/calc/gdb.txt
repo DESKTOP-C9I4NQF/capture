@@ -1,0 +1,2915 @@
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0efef0c42217b9b9ecbba402840ccc5b'
+[Inferior 1 (process 154314) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_31a9e9c3b03b54bd194cf22f4ce63a01'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_92891faa0c6b76006863b81df769deda'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b4c9191e493444dc96df11f7d0f2181e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7ea7261c7f15281cc049672986c9120a'
+[Inferior 1 (process 154362) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_88a7d8694517d703efcb403c03bf17a8'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_07bdd24c4b376c51116c47916ea89b7e'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6a15a204324b7dbf1651247318ae7879'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f5c3dc791e55661cd45720f8fcdd2619'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f9d78efd0063c4d8fdddbc3aac51d6d8'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_19a32bb2499f51bd6c14895960ae6cc8'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_87542c409ebe195672e5087fe98c6a77'
+[Inferior 1 (process 154413) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cdbf25c54508f0c14aa230ff180ec8f0'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2be016498cfad9d51aee4db0bd5131aa'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_622dbe7ae78e79c9730d4a0b96b2705d'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a69f647ec160721c2160f4b6da134bf0'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f5835e80e943917e1ab5e5400f19eea0'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2ee03eb95d0492dd2a6020d5a2ffbcc3'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2b62452f91cd94a020a64021262d03a3'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5edfc07d3204fca78556712199540526'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ff4f2368f3676f316f8b05e8a19bfcf2'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2f3ac684a3ef5e91eff54f7e0c24acfb'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d2005be7308d00554c5adf83250152b8'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f5b87764c1017bb48f3d64edfe4fb8a7'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fe8787acea667f5ea8fe27cfb9ad19f4'
+[Inferior 1 (process 154511) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e4c4389bc5e272d24d022c586169462c'
+[Inferior 1 (process 154517) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2b6e95691cd52f9b28c5bb5ccda33e9b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_225c086b81cb2bb4c0325c431185086c'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b802a74c5944c31a902a9c34d3c568c9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0dd13f149ef529ac7ddeb81470e7d651'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a1a838b2dadf73dae87335d2e3829682'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_87f2bafdd706754b3d47d4459873ca8f'
+[Inferior 1 (process 154563) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_264ff62f003537bc162399c19a693994'
+[Inferior 1 (process 154570) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d76113f38cc0df45d124fcb46807ed5e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_728c6b382c8262bb2913102f02335a4b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_56625561c878d213c1d2abea237c455a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dab35e31c02a3ca913cd9e663d839665'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4a304ddf46b03f1006a904a10d6ba543'
+[Inferior 1 (process 154606) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d3a8f589fea0d74e4846e04649f348e3'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_73541eb64b2c77d0644c9f177ab146b6'
+[Inferior 1 (process 154621) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_78a021c734bb3633d063b95a24f4d964'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_01b990566b4d1ace966249a43ddf0954'
+[Inferior 1 (process 154635) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_793045fb3f0439bed9e50bca9b11782f'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_99856d56ae3699c3f4921329d2f4755d'
+[Inferior 1 (process 154649) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fd3fa39ef22f07119cb3fa50cc7f4fd7'
+[Inferior 1 (process 154657) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_28c4c65d4066a2d63d0b652a0dd2f71a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_46e46d5292a51eca9fc06110282a9e49'
+[Inferior 1 (process 154671) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c5731679c007de098d7f7cdc3de1927f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_90d20a89ada2ac32eef3c3141a610be5'
+[Inferior 1 (process 154686) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4b45bb6f913c2bd934236507a75da0a1'
+[Inferior 1 (process 154692) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9ca81635052dec8f279b92494788ed75'
+[Inferior 1 (process 154699) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d6ba04b5e32995c7f0d632fe380ab346'
+[Inferior 1 (process 154705) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_172bb801f3d164d64198e5406420a891'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_80decafe363135bc8b53fd74caca589c'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_10b3266aa309e17067a034d91b53363f'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4e077a0cac54c0b687ec6437d11cfcf8'
+[Inferior 1 (process 154734) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1570fa60fdd126fc7d1a5c64fb5ce4b6'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7ac1385d2106a0691debef73a3abe55b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f9b08b9d1ea8f60e4a9fa4941c903360'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_73868b901ab83466d20d581492fb28a3'
+[Inferior 1 (process 154764) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f3f39c432b13f845761b368b2e6c5f89'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f841e250de1c4d6e83e2914db8e35845'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6238c70969178d178d93c2e3006b4550'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c3bec3ecde52ae7500912851333598ee'
+[Inferior 1 (process 154794) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1bea5a8311a48ed24e827d1cc905e3e3'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1babc6f1424a630a6df5cff0bc56eaf6'
+[Inferior 1 (process 154808) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8c250fda6fee87da9af5fbcae6ef6a2d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a2ffaf89dd6b02d0cc8ba53da885da08'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4d7a2e9ba7bad1b486e8e2395522ad57'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1129a9ce124955ab416cb2e039ae41f9'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8d75f1adb767d528e6a36a83b85f9c52'
+[Inferior 1 (process 154846) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7a835dc02f7f8144e3769330ccfb2c35'
+[Inferior 1 (process 154852) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_50443c8d4f890d03c9f4f50cd0460c11'
+[Inferior 1 (process 154859) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2832c8f1a2bda9bf436058ac2729a12e'
+[Inferior 1 (process 154865) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b51c1b41563c93267c6c15993fc6e783'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f7dc5c47ff10c49dfea42e1fe05de3f5'
+[Inferior 1 (process 154879) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ded8d408527c1a907ee5e5a7daff60e2'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fb31d655dde7efb70e72f77498e0766a'
+[Inferior 1 (process 154893) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0e97d661c11c9788c634a13ae1333807'
+[Inferior 1 (process 154900) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2f3c238b0dcb5bb0c1bc6376d4c648be'
+[Inferior 1 (process 154906) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d47a9af9879540a76d4f9a5cb0f44f86'
+[Inferior 1 (process 154913) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_282dd53c7b27f571dd2ef5ec123ec536'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_04a658ddd7e7385d98591d4c0ac4ff17'
+[Inferior 1 (process 154927) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a2bfc7a695cd915deda7de967e275dd9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_04b22d678b7e986bba0043356601ef08'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b6c27ed939ee7471b39b32e9f803a5c5'
+[Inferior 1 (process 154949) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8e5a82cd80bdd073f79d90270a643646'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c491c526f97d32474deca80ca5e6f076'
+[Inferior 1 (process 154963) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2419d64947c20c4876fcda5b1a40964e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8719a0beaa744ad0a91a9074fa95cc4c'
+[Inferior 1 (process 154977) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cf72eea3a1ac2cecf745437486f067d7'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9ee454d5d8732c7e4f93e14fff8cd329'
+[Inferior 1 (process 154991) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c2b8247e55c7a8d4e45dc54d07c3ea24'
+[Inferior 1 (process 154998) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1abdaaaf26a21af52bca75e4ded99e27'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9d860101383934633cc61da160e3536e'
+[Inferior 1 (process 155012) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_bcb0d15f8149c18591932c8965195b3b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2c863c78be1c720e70473d254aeb1f82'
+[Inferior 1 (process 155026) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7dc11c5b98edc05dff3700ac82b5549d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b82211c40eacc393cd60448e74a29154'
+[Inferior 1 (process 155041) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ff8bd5753171ebc4508c774092b039ca'
+[Inferior 1 (process 155047) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9895cede6ddef961b0da3c8d2a3aa29b'
+[Inferior 1 (process 155054) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b2c7f5c638b0fec945306183447c6bf7'
+[Inferior 1 (process 155060) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cfdd0543f1ef86f01de365a6ce0dc2c5'
+[Inferior 1 (process 155067) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_079b2eadaba2c5ee4f40f5e29cc71d4b'
+[Inferior 1 (process 155073) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6ef2e52a59e1aa00e9414b4525f03618'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3363b4242b8ead30fe4a1a3dcf0a3851'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7eeeb181ad0168f1f9cf2f63f6c0f999'
+[Inferior 1 (process 155095) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_72d40cb29f6cd8a68a4b1c981d73e121'
+[Inferior 1 (process 155101) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_196538c2e4dc472b0dfe565efe972e57'
+[Inferior 1 (process 155108) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2aac2607db38de37d6d9fcc895122bbc'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_794f6faea5e5d4779fabe37f2b381ffd'
+[Inferior 1 (process 155123) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9cb28ad12e8d935375ef081a4751c899'
+[Inferior 1 (process 155129) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_bbbad67aa95a8732f6a97e1d0cefeec0'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5ea517d3a1bcc72f52a18f7df10849d3'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_be6e191d845e20488ee56472c7986a8f'
+[Inferior 1 (process 155152) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_666a92e2541b01a43380f53fc37abd0b'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_41d2d4d3124c78b5c721c575b453caa1'
+[Inferior 1 (process 155166) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4706096e82d8ec4571f30e79d33aa400'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a488a02a9a9fb47ed1933a47e826656c'
+[Inferior 1 (process 155180) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5da6beeb78885f443bcd5701db929830'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_aa504a358ca56b496c64c0262562fb32'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_138d5eeac966ef08098b956977c21831'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_921eb27b0e86eab37f5f9b7ac4101e2a'
+[Inferior 1 (process 155209) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_bcff67a86e778d4ae0fb3482df94d4b8'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_882495158d03a51af6c3304eb8974bb6'
+[Inferior 1 (process 155223) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_79f1ca5a191cc1c699c3ef8db5ccee73'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_daecf7e8669e4a63039c7bf7d5fdae95'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_03a9bb11e2c7350b946acc1978694582'
+[Inferior 1 (process 155245) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9f1de25f2cfd82ee5a75ab087e9f27aa'
+[Inferior 1 (process 155252) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f7cf2e7acd0df9bfdcf732d06bc59b5d'
+[Inferior 1 (process 155258) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_766d93888055e0d44b1aa855e0416a09'
+[Inferior 1 (process 155265) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fbb1dddddd59e335eb49db4c4fc3d9c0'
+[Inferior 1 (process 155271) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2a86b4eedff5e93011de5d3300333c12'
+[Inferior 1 (process 155278) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7fcf3cd620c8a25e375fbf3528a6db6c'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b91188cb30409dcce2bd41d72539fad5'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_08dc54d573e6ae208aa2e21df657f59f'
+[Inferior 1 (process 155299) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2cec7520d3c0a8571e0d594da63650f9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_785eda2fa8f287aa838f97ac1076f977'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_bf5d357f78be9ae66488a802a973aa06'
+[Inferior 1 (process 155322) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f5ff3f386bf2727497fcfa27990a1100'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f23d1bd7fe7786e98c884ab7829b7735'
+[Inferior 1 (process 155336) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_aa167d20d221e6650a0f1738c9aee744'
+[Inferior 1 (process 155342) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2fa8f960a49c516e8789d908033d294d'
+[Inferior 1 (process 155349) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c790a6f47c2e188b21f99ab1d3d01b7b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_15d8348ccc48f5dfd8547ce3621d65b2'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_bc6ee0b9b413076bccf91e98c1d6f8aa'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_943814fb0124dd32bf6def527d12c5e2'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_46991619d366bc3d381c9f3757b1b7fc'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_de2f95e745b7acf1616bc6cdbc58caee'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_33c47aa520aa821fbc6c0c132ebf977e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1e4a44e7fcb5687dcf1d08c59bee758e'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5ce4339d94d577a9a6a6dd6ae155662e'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3f1246f1e1f21171151e75de5057f401'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b9607f807824b60c108ba3c8813e74b1'
+[Inferior 1 (process 155432) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ef6c04cb0aa8d2689a92e51a82bbf27b'
+[Inferior 1 (process 155439) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_82f05587b1ccec77cbf7900e7db4e186'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_784c13b3c0ccaa592be940e177980352'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6b277b28698affec83cc224bd849ddbe'
+[Inferior 1 (process 155460) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f10cbc92ac98af64ac52e8b2924bc1de'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f41154a92e51e588a02a48d6015d46bd'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5b02eb22008a41d5b2e0343d4deae14e'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_887aa0948abe1cd51414af36e22e1a0b'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ad501318564967fd99c0b12b391ccc24'
+[Inferior 1 (process 155497) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7c404ef44ef7b2d2a77715b642a3a75a'
+[Inferior 1 (process 155504) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1209953d9f4b485036fcb413fc89e2e5'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c8ae49b83c078dbe41bde53699d5052e'
+[Inferior 1 (process 155518) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f1ea920634672ca57422e94938e76ce0'
+[Inferior 1 (process 155525) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f949b81956aaa4ef72b618f742982ade'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d5afa26aba133c27e0bd0d441307ac00'
+[Inferior 1 (process 155539) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9fe1f6f6c9b742a1c49cb1643af713b8'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b33efb51f1e94e6a6902b8033e0539cf'
+[Inferior 1 (process 155553) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a45f1d9281456e5d0474ec2deb48dc93'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_bf1e76ca85d691c43baa16711285b7f7'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2aedac627156626700ebe779bc4035a6'
+[Inferior 1 (process 155574) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7e9de14ec8c63d6c049846cca672f6b7'
+[Inferior 1 (process 155581) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d5e030078c1a3417b0b94231fa5f7e19'
+[Inferior 1 (process 155587) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9febf10599e3fd83bee23658cb401398'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fdf280848c875347f9fe0a67a7defb04'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ce82cbc9f7a9e985b786c4fb9a3d35af'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9cd8c9974bed000272abcd2d4aa9521b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_df4d3d82fdcbc96280bca052df95bdaa'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_091b17afbd1261d96028f2592fc052d2'
+[Inferior 1 (process 155632) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_51fbf733324588a8ae87909e9fba6de8'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4fca7e4f0116c4f357098b0d9434306f'
+[Inferior 1 (process 155646) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4a0d8abe0bd0c6d3912412107d2fd1f3'
+[Inferior 1 (process 155653) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_70d97700c797013fecd54d3bac3acea9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_836652ed790714fa782f84eee5bfc80e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5c1a07f10d8a8b6640138df360ad62f5'
+[Inferior 1 (process 155674) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a596bbf25d73279891d915dc3818e27a'
+[Inferior 1 (process 155681) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a7381d78b63f9e4cb6d4d80f2ab60f22'
+[Inferior 1 (process 155688) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_370e7340876b917496036f4ea43354d3'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_24dc06377cb6792f3106daca90a974bb'
+[Inferior 1 (process 155702) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_43e9e3eaac86066c63affb9c03bf489b'
+[Inferior 1 (process 155709) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_009df2f93b2c33cabe916afa4b4355e0'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_930739b567c0d0fc25f9532ebec779dc'
+[Inferior 1 (process 155723) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f517e5e09ab557f2a02ec8e782008a3c'
+[Inferior 1 (process 155729) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_de0f68fa6d5e2869147634d9a11a2284'
+[Inferior 1 (process 155736) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_54304d7361b0fd4f4941493819e7b634'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_90c983387f4a92543bff7e73b770d11a'
+[Inferior 1 (process 155750) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3a75249933a5e225737821c5972233e9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5b30247953f0a1779e56816ccf3e3635'
+[Inferior 1 (process 155764) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1f78ebc024cb46df6eae6ec1e117780a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e69854243b255db082153c0f13ea20a6'
+[Inferior 1 (process 155778) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b8fd4e8351f4673a2f7bfe75e5350e6f'
+[Inferior 1 (process 155785) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a09dd0c765cbf1e28a7cd0b90c2eedc5'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ae6ff426def0ca72e49f2ab1ec9e2622'
+[Inferior 1 (process 155799) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c206446f4319b6ef9a04e64fe02af3c1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_213a60c39e310a685d629637b339cf9b'
+[Inferior 1 (process 155813) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2fd33c484f8861def2d945143b4aea85'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_73d64e3a2416f6b32359142c239691cc'
+[Inferior 1 (process 155827) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_86324d7373220f27a887f86e7f9162b9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_052f86b5d1d5403a9a86c18d58938873'
+[Inferior 1 (process 155841) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_37d5089984106a882ae82f0aae4dfbb2'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2238358b930ab5bc2d6efc416d6f3035'
+[Inferior 1 (process 155855) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4216995c6c28822103a792815c644111'
+[Inferior 1 (process 155862) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a52c09b8d9281bddf919e35de78f1975'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3a97204497e575d64c3c4de811f01ae9'
+[Inferior 1 (process 155877) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a18bc0eba89c836598d9135f8acc0fdd'
+[Inferior 1 (process 155883) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cdfcaad3fb351eddbf053b984f0b5174'
+[Inferior 1 (process 155890) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cc3d2c116f5b1d82ca9b5294b661e1d6'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4c43ac3697e96763f2bd6f5501b1cf1d'
+[Inferior 1 (process 155904) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_05917e418c69cbe2609377946caf7530'
+[Inferior 1 (process 155910) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2f0d6fede369a21ac26ddb9de70b67c3'
+[Inferior 1 (process 155917) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0fa7ad5edfcf5c64357472068f515787'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_35f9f2d673a4a3f72d0a64a72ce0decc'
+[Inferior 1 (process 155931) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_933659dbe9e0b7818e648d4303d749e4'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a104af50547120b47c730580e36feb2f'
+[Inferior 1 (process 155945) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2fc5f892c3342b68100b51a00d174bff'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_52136fd24c1e235574f6267b26cbb4df'
+[Inferior 1 (process 155959) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8acb26eae3ecbadad4dcbc95c2f859ed'
+[Inferior 1 (process 155966) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2879f25d5a9409f6c5f4a4c58677f34d'
+[Inferior 1 (process 155973) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2a0f3f641ac08ee915415438e34a53ca'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e64120128f662fffd62708fa898edc86'
+[Inferior 1 (process 155987) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f89aef619df36e612ba5bc28a9e03169'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fd33dec57669f3a6cc19bea124443a14'
+[Inferior 1 (process 156001) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d2e24d030110652b6b791f54d1f74fee'
+[Inferior 1 (process 156007) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2ed3d64a1149523e63b93654413a3df5'
+[Inferior 1 (process 156014) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0068b956b48d20695c32423d4127d4d8'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_da3196ab6056017a5702f277d4ce5498'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_23a2238c76bc34f1f41741a977d65e1d'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_50c428424796e06ba2851bd61f4891c5'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_96660bc34927c7cda8b8ada4461de41a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4da4f4d4f618ab86d6d7b5f212a8ea32'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_51bf32d2b7b427574a3bd24b39c7c80e'
+[Inferior 1 (process 156066) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f2ac54133f78df0cc98dcf3db976992b'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5c0bd0dff88281b9628ff9a542cae472'
+[Inferior 1 (process 156080) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c4d89f8d5df21c119abfc1e9b39601d3'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_61f7c75d6bd05615405abd3f08f421cb'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d1fae1b00722f0b568a5c155851c19fd'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6bf450131772fa2868a440185e5c41d4'
+[Inferior 1 (process 156109) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a282521fd292d38b804304cc94e7579b'
+[Inferior 1 (process 156116) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b4362a758c9ff625845132dcab046120'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7a54cda6a0d48f3cd49ef2e9492f188a'
+[Inferior 1 (process 156130) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_de042c79393ccccaa42f97285dd40424'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_76cfd4c47ca7e1a8f3546bfe1077a148'
+[Inferior 1 (process 156144) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_35d53916dd95d187261ea021001b6574'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9f4cc99219398cb3f2b4c32e44784ff9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5acd2fa6ddd3bd64606017251fc02fa8'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2a157ed73f362d4876eb3fc121c27fa0'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d6e91bd2f1db256ee91541ebe39a5aa1'
+[Inferior 1 (process 156181) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fb64b5725d8a6e4eb059ce5d739a5ea7'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4e45bb6817fa38971acf9e27c51144e5'
+[Inferior 1 (process 156195) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_018d4d089d20bab9f4d254b909651d15'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0f0a8aac5b9c6e71d6db8b0acd8f2d07'
+[Inferior 1 (process 156209) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8f69366da3f3a8649cff40cef409ffc5'
+[Inferior 1 (process 156216) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_41e430f4812d51f0b4a13beefefeea35'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d3a86766d463f9fc81351a84204fe830'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_20e68119f06e0b9818dcbbba3e6cc043'
+[Inferior 1 (process 156237) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2f934f5baa8649d408efbfa5137cbcd7'
+[Inferior 1 (process 156244) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_46ccac8a74d5d2047d92262690b665ce'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_87b804bd2af6017f4368c142d256dd3d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_aae13be959700894d55863c3204883d2'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dc2387bb76b88379c76e8bf367ac54a4'
+[Inferior 1 (process 156274) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_87a134c37056e912d4edd2f08a2a37ef'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a3281529227d4d141f98440a2bb4bbd8'
+[Inferior 1 (process 156288) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1fb0146568a9f2cd6fa1ef64d2acb723'
+[Inferior 1 (process 156294) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7f90d325ac01837f5538ba8aea8152ef'
+[Inferior 1 (process 156301) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6fbe8b8a95bf31aee965ca5fe618d7ed'
+[Inferior 1 (process 156307) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1f5559a4e13955dc0b3aac30ad276109'
+[Inferior 1 (process 156314) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_28f16125f9fa810465ec69e53767e029'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_85048d661c665fac133d149e5a85d8c2'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f2b79f018e4b203cbfc7666626c0b1e2'
+[Inferior 1 (process 156335) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ef1064fa2753a1bf54ba619603442709'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3677cefe612d5408e7947233a3df6388'
+[Inferior 1 (process 156350) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_aba2cf59687814799f76b3b4cfd6c71f'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_30f41f86f4eea19ca53c320ae998ecb1'
+[Inferior 1 (process 156364) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fbb7130cc1392837a3328cd05f6edf96'
+[Inferior 1 (process 156371) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_88d1446458e15b23896929d02ffc6c70'
+[Inferior 1 (process 156377) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d7fbd36e72bc04f3f4d16a1a741cb989'
+[Inferior 1 (process 156384) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3e6a5b2bfd82e9a48c5a5e3f90fab65b'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7e095a958fa902763bafdc8e5ac06ec2'
+[Inferior 1 (process 156398) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7baae2f9a1452e2ce6ffd7b950d78625'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0340ae9a780310f659115e081657d8e6'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_73458a3646b24fb830beb70ca5438a2e'
+[Inferior 1 (process 156419) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ecd6553da0877ed3fe249fbcfd3129c0'
+[Inferior 1 (process 156426) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4803a9a6bc6331a7661f6f480602c87a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_651d5203c966fbcd4d4b7fb66673c243'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2bef5d0c40cb32335823bce7aafc1c9f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b737dbca2936372feb41a0a8fc4e2552'
+[Inferior 1 (process 156456) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ebd092a38583552e6fdf3d180eb4bcb6'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e9af40817c6758d284ea9896cdb9a0e1'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a59983f6ab83480c7d37be4d657f5e1a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b7c43115ef7c93950fcf034424a9a621'
+[Inferior 1 (process 156485) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_10363f6410bc1b038f0d72115b196205'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_663efbf274b96e4558bc18f5fb0b0ca1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4b2732bdbe4db034bc8f4dbec371bacf'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_35fb048cb521250e0cbea57665973479'
+[Inferior 1 (process 156514) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_004b2d0f42c29a717378fdfc01319bd7'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6a2639f64653cae29cf037241e50f6df'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_89550023536923fc00535069b9723c82'
+[Inferior 1 (process 156536) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f29e2b259fbfc70edfb6ecf5140f454b'
+[Inferior 1 (process 156542) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ec603b744f4b04f6015e05ba2883c94b'
+[Inferior 1 (process 156549) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0d60ae5eee9faacad7c1a6f89d4508eb'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5b18a53dbe946f314c1ea603b9fa1ef3'
+[Inferior 1 (process 156563) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c346eb5be7b0ac0467af8509f5443fc5'
+[Inferior 1 (process 156570) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b197495474620b2b19ee8e6984903477'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e3827d90f22ee8246e1c6d9e859a8f8c'
+[Inferior 1 (process 156584) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ab0e0654fe4b2cc156889500054d7e7d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2125223d292ca9d3b1143c9faa628570'
+[Inferior 1 (process 156598) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_197427d72437fb16cbfd3b21f95029cd'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9160742ac9307450a75e508404338829'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9a25b76d37697903dd5e4362202abdce'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a6ae2d70a9da8867fc2136df0ce384e2'
+[Inferior 1 (process 156629) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_03556ef91e8405e218daf1ab113e6588'
+[Inferior 1 (process 156635) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_456be8a0d54731d76eec5ee641349584'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2ffeb42076b60e7e168d698489633cb2'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_711cfbf9b4ab7bae4ea5d270cf03cd76'
+[Inferior 1 (process 156657) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_90b99370db1083fa817e13926cd151f9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e25dfd18dc773b1bbdb2344142a0ac72'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b9e95db2b46ca4ddd747010d94692a2c'
+[Inferior 1 (process 156678) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6c15ea979927c2ff709272caa0c1334f'
+[Inferior 1 (process 156685) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3156e811f5c6f149de64780371973b3e'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f579bec9c2167e180785654575d371e1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1e8fb0956e550050e44a6388ce3a4f23'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8f9c5f05ae9a5d1d0f8304f9220e12a1'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_eab0a38be0d373d3f1af34b5b10b399e'
+[Inferior 1 (process 156722) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ad2a244af3ef66b2ca4da9b4ba2dd76a'
+[Inferior 1 (process 156729) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e45b0b14c5b691da5c1042110f09e56b'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d0a363b8ee190c9a64a6fe3aa2eed012'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c6296212a8ecd79df3dadcb19acb2307'
+[Inferior 1 (process 156750) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9c0efe42961b105690a0854f13e3f6e6'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2dad45f0d98434d3f0a869f7531cef75'
+[Inferior 1 (process 156764) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a483d51318a47e1cdf56cbb10031dce4'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_102e8919e630fd9f4f1f0eae64abe22d'
+[Inferior 1 (process 156778) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_89aa8be984ce31f3fbb29292dfebc776'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a556b48e230ff0b1ad16c19578d40658'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1afcb50aade60cca045cfb19a6a99853'
+[Inferior 1 (process 156800) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d25c111f2760f1e810a358e03e0aa934'
+[Inferior 1 (process 156806) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dadbde129a56125054c37bac405edc6a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_95c6e314783922241bd7d9193cb0f190'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_244ec9d24874fb067271af5cb69f8417'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_25237a5c7e3e7fe20bf44a13dc0b69c6'
+[Inferior 1 (process 156836) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_38917e57c840342880fb4d3f04eb567a'
+[Inferior 1 (process 156843) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b937590b5eda998b73b6735e24ce712b'
+[Inferior 1 (process 156849) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_382cc8e457ab5c9d91ade0a853ef8398'
+[Inferior 1 (process 156856) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f589bf5f83f7facace5b6996118e80cc'
+[Inferior 1 (process 156862) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e97d7c87f8b5cd6439e84c4b451c4bc4'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_28c9fb19c0266db08f1e75c2bb68c5f7'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_88c51d63741c75ecae665752b90dc782'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7a66780bfdf731ec621b27cbc77fb649'
+[Inferior 1 (process 156891) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b09ef288c479be65173d25f0c6f2d607'
+[Inferior 1 (process 156898) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cd990abace693c9562994f38e80df656'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d0e44e2bad44e876f0b6fb839eede5ee'
+[Inferior 1 (process 156912) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_67c4e3f4735e295ab3f57b0e9285e40d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5b8b888901c4e93e95e2690c3c00473f'
+[Inferior 1 (process 156927) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_38b9ebabc25ec7a4a8b3f0578e20d84c'
+[Inferior 1 (process 156933) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_24399486110f28ace97823f58e195e6f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_751ceb4d3be39c9283c5cf5b3f188549'
+[Inferior 1 (process 156947) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a9ac9f1c3f3515b206b857d48e2d27f1'
+[Inferior 1 (process 156954) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5c9c01c9fd573251ca50d89e20dafe7a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5220891c78ae1d392e3f928d9ae83d30'
+[Inferior 1 (process 156968) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fde6f109ed2ed3f9a1baac8298b74751'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3bd407a0a4fda2f45a51e8468e056219'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2c3f824f831b869fcfd426f73b8cf79f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a9d82ef812fe93b24a8e8cf5fa3a7a61'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_622529b6df6d75a83431f78ffbe6553c'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_52ffa67d4d9c6de588238586037d69ca'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3393791a29316804c1aa12f819a1ce0b'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_41e11769e171fb1981c56cc96d6b0fac'
+[Inferior 1 (process 157029) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d7219c2283395c94a89ebb44ca5fac32'
+[Inferior 1 (process 157035) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_651c5fd55e92e1b9c6066e95a35ec1f3'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_53e9d95e8c9ea92dbfd53ec80aa5f47f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a5e526b27fb888ebb8f1d4a6a2d85ab9'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_97ae7751067c9c06bffecd558359934c'
+[Inferior 1 (process 157064) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_122c71a13b82f69468b0bcd077131934'
+[Inferior 1 (process 157071) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1c6f258d1268e98192d26b4ad3604cd7'
+[Inferior 1 (process 157077) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0b59cb2f0792cef1e2dbf275a4b10a9b'
+[Inferior 1 (process 157084) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_48140e569d9f83144af21b1655b7c9a0'
+[Inferior 1 (process 157090) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_982b286d7b5500fb62689abdc317e2c5'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8bacf09a983da0f6bdb4dbc0db8081f4'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4e4f7ab95389fd21c93543e46d4903f9'
+[Inferior 1 (process 157113) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_34ace88dd72f8ebb4760baf5c74c27f1'
+[Inferior 1 (process 157119) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_516f0f396a603aca29e5a9879a3d6d7c'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_28b99b881e0b76f7a89d4142f5b72ca4'
+[Inferior 1 (process 157133) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_116bd1c37cfa07ba8af23a259f0c6031'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dd60ac3105fe1827ff108cd275fc8209'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1b0bc223d28b1004bc93064cfef738e0'
+[Inferior 1 (process 157155) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e97c70b7ed4ae15489b7b532e3b22799'
+[Inferior 1 (process 157161) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cdeb4073a0d84d1014741675af9b600f'
+[Inferior 1 (process 157168) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_74cef44939ee93063a05f1d88931c6b1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f52864bcdd877bd39da908858debce4f'
+[Inferior 1 (process 157182) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ca0c7b1b388fe0b6f7570b8996b8c969'
+[Inferior 1 (process 157188) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0decdac85c64c9bb92ffe1d6563cbf40'
+[Inferior 1 (process 157195) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9e302727b065b9dfdb3f38a8d786100f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c8732b0ad9374ace424bb02d265ae03f'
+[Inferior 1 (process 157210) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f6cb4844ef4631c1b2b48af62ea3b1ee'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_842cd0bee44ca32e9b11d1d343f6614f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d04ed4552946c5b679f69f9998a535bb'
+[Inferior 1 (process 157231) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1336119f83a26df7fb4371d15acce41b'
+[Inferior 1 (process 157238) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9dec766d6072fc51e2e9fa598aa8538a'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ee9d7a630a3b2c02c22fc65da2abd807'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_003733d88f253171c6de7cfc80a10b44'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e3efeb1877c6b60ee5c8f9029b4097c0'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_86fc8e585fd06cf134aab28a60e4f821'
+[Inferior 1 (process 157274) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_135fba96e017216affa99af399b312c5'
+[Inferior 1 (process 157281) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_aa74cd100408b08a67d9a77872291993'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_90c554028ce538306ad876e739880579'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_16c4c48250d1a124a30acc9e2b1dfd37'
+[Inferior 1 (process 157304) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0ee4c9c6b7c079658ccd42b1e2edbbbb'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_10e8ea6d11c86eefc53058c9738b0a69'
+[Inferior 1 (process 157318) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3ebea11bdc8296aa3dabb864e6632b2e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_05e4d6362e68b4434c4a08bc8be59ac9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_506433d9b00eda859551b720f9d91be5'
+[Inferior 1 (process 157339) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2233daa371ac190f69eea806922e8669'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a4a79cfaa138642f701e9e14070cd972'
+[Inferior 1 (process 157353) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7057877ad2e6747e5f66188d298c8873'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_de8060eaaa8b6fd6cbea1b954a29a9de'
+[Inferior 1 (process 157367) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8354b7fc0fed99f9ccdf784ebdbde460'
+[Inferior 1 (process 157374) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_11ce12780a2d0e9dd4179979f72ae247'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9e2ce55ecea3a7714a751764f3d5f0ee'
+[Inferior 1 (process 157388) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_76948703acf97d2013c698278cb362b6'
+[Inferior 1 (process 157395) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_71d0717f699b8f6cf5d6753bb813118f'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5d55386d68aa52d8cdfce178889a80c4'
+[Inferior 1 (process 157409) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_15c3d64e65e9f1f4e646a777513f8082'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_60c184d80be4a447af460d772d0d9bfc'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_823b3b97a40c0167fd9fed367b83827f'
+[Inferior 1 (process 157431) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_44720d0f5744983264a3174fe68ce23d'
+[Inferior 1 (process 157437) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_063693ffdf0966fad7b9375954d8daef'
+[Inferior 1 (process 157444) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5844115869c2c794b63c976004f341c9'
+[Inferior 1 (process 157450) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b17ac220ae90f64b68a62fb99941e284'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b24bf278e22dde3059fbafb668476fba'
+[Inferior 1 (process 157464) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_79993945b659345dc67291b45d26eead'
+[Inferior 1 (process 157471) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_882cbb627b5937f52a53737384da5e48'
+[Inferior 1 (process 157477) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a3ab41e279552edd7f89d112e02f53c1'
+[Inferior 1 (process 157484) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b12d1bf8c80c8febc05e8714c7c5e152'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_728c5f7f590dac85b5bc21570212dcab'
+[Inferior 1 (process 157499) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0009eb66425e3a5c114f57fcef8aa924'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_c80c6bb59c3da1c0ead2061d35c6d62a'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dad9c89dec96264aa3b1915e4925dd10'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_21c53c58aedd1b450290ae2e10ef661d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1190221b44cadc1127adfcd24d470eb1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5e66b110f141fd513de771edaacbc342'
+[Inferior 1 (process 157543) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4e6cc417014d4406ddc94ee69154cec9'
+[Inferior 1 (process 157549) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_6156f6b79c5bc9422d97f555e3b2bfbc'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8ac4c43455f4af3daed7e75e639c386d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1ea0062dafa68a436b805a0bdbb72bf0'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_33e1c359d1575ab3a5db5382c0457ee7'
+[Inferior 1 (process 157579) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_89834ccb14286cfeabc5963e8efb3dd3'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_518e051502cb503efd8aeda34066fb16'
+[Inferior 1 (process 157594) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cacdb259737cb6a67c4a0744ee3cd5c2'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a8d6d41cabe728f298bf16a86fa7fcb1'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_8e5f1b4391d5eb30ffe3b9b3865d9fd6'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cf6a0026380cb1ea986cbe352b7a81ab'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_447018cab2428dd82be5a999286e3c22'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b33cab8c18d3109309de4b327cb21c8d'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_be6f31dacf22a4dd948aee1d6d5927a1'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_242bf653099f6e7dd8ec99110804106c'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_f040d099941d47269784582b907d44e1'
+[Inferior 1 (process 157661) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dc77ceb11a48a9c5238532b114dd0bec'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_710fc2f9fd70acd6ad7b2523038aa7a9'
+[Inferior 1 (process 157675) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_86019407f4d6d296d44fc9f56a382ed7'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_878ca952cfd46049e4838a281d7cbfe8'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_488d4181296e61765123f4b533ffc575'
+[Inferior 1 (process 157697) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9942436898c8ba603d0fa297efc5f70e'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f61 in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cb233c5a3a7c5deab0c7b6f60ece7ff0'
+[Inferior 1 (process 157711) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_388029094dce58944243beefaa0a3b90'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_cc665b6a3999a095b88c3f997833d6a5'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_62fd6b0cb88f4af33358c33387de2723'
+[Inferior 1 (process 157733) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3f1a8c5c841541d7740ff2c8d6e9b4c2'
+[Inferior 1 (process 157739) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_10626f5d7b91081b481c405e51be345e'
+[Inferior 1 (process 157746) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_77439193f637ad17dd83d397064fb79c'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_08f6eb3f3151ed710f7554bb014f06af'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7228c76f05291b7556482b25115c522d'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_1146078406a7b9e7b3d46274695f1ebc'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_11bcae43686e0b4965169f1ab8f6b103'
+[Inferior 1 (process 157783) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a664f5133d9c2d8103a8785b8f596ca8'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_272abb74a637e6708eddc7c84550a314'
+[Inferior 1 (process 157797) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_40138d4fccbbb0d095268e99759bc751'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_02b97997c96708aec6de73e9ed693078'
+[Inferior 1 (process 157811) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_2fc2e7935de6d9e40b6eef5df1db1141'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_fae1280b04117cef0134fe67e80708a9'
+[Inferior 1 (process 157825) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_966860303cb831b84bd2a4562e6776e7'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d4518394a9a71681eb8fa77826a5a98b'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_d225ea4ce712ee6896486ea2c4855f4a'
+[Inferior 1 (process 157847) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dcd6cbe9a316472ad2e8241df8e1ab7a'
+[Inferior 1 (process 157853) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_a14822f177246a00d9a6cbafe90a588a'
+[Inferior 1 (process 157860) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_09a2c2866ffcf8778bc3bbea5cc744bb'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_3cdd4650f977d2648c5a91ac84efac96'
+[Inferior 1 (process 157875) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ec6dc50a11f378fe210e0ba92c7875d9'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_e07b4f3bb33c60d4e81f82e7d22ac0c4'
+[Inferior 1 (process 157889) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_9eebf0fd8ee41dc9635946f7fca54cd9'
+[Inferior 1 (process 157895) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_ed19027682550f8c7d3f2395f0f4946d'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b409137d37b6a69bf8fe7750f3f129e6'
+[Inferior 1 (process 157909) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_934663cb663a9cc81186e5ed19b1f8a1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_79b91cab8951e827297b3ecd54286748'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4318f5570d96d90c440a2782ab2607cf'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_5f7afdbe0a291e3de0fe69c9b407f7e5'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x080493ff in calc ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_363f8e65328722a375cb182efe60bd85'
+[Inferior 1 (process 157946) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_39b4b73956f922bdc014ad53a9a102b6'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_b22b356325955d4bc918304f5bf12ec3'
+[Inferior 1 (process 157960) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_dcfb641f67f5610b5cf1f2a694aae5a1'
+
+Program received signal SIGSEGV, Segmentation fault.
+0x08048f2d in eval ()
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_7a63722171bea9bfdd01097cc4724806'
+
+Program received signal SIGABRT, Aborted.
+0xf7ffc549 in __kernel_vsyscall ()
+Continuing.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_4c822d8be21fa14764e71d02f0742d32'
+[Inferior 1 (process 157982) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_15ca78b2d8ff9004bba71d065a643d2e'
+[Inferior 1 (process 157989) exited with code 021]
+The program is not being run.
+Starting program: /home/logger69/Documents/ctf/pwnable.tw/calc/calc < './sample_test/tmp_0b6bcea8fae1b50428c173c3229efbae'
+[Inferior 1 (process 157995) exited with code 021]
+The program is not being run.
