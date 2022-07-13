@@ -1,19 +1,71 @@
 <!doctype html>
 <html>
-<head>
-  <title>CTF writeups</title>
-  <style>
-    .cursorman {
-      /* cursor: not-allowed; */
-      cursor: grab;
-    }
+	<head>
+<style>
+body {
+	position: absolute;	/* body allow us to control every thing */
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
 
-  </style>
-</head>
-<body>
-  <center>
-    <h1 class="cursorman">Hello World!</h1>
-    <a href="/ctf/read.html">Read Docs</a>
-  </center>
-</body>
+header {
+	font-size: 3em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.breaking_news {
+	background-color: rgb(242, 242, 242);
+	display: block;		/* cover up whole area */
+
+	left: 0px;		/* live no space */
+	width: 100%;
+	height: 2.5em;
+
+	position: absolute;
+}
+
+.breaking_news .break_string {
+	position: relative;
+
+	padding: 0;
+	margin: 0;
+	width: 5%;
+	height: 100%;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1em;
+	transform: scale(1., 1);
+
+	color: red;
+}
+
+
+.breaking_news .break_line {
+	position: relative;
+
+	display: inline-block;
+	justify-content: center;
+	font-size: 1em;
+	
+	width: 1%;
+	height: 100%;
+
+	color: rgba(0, 0, 0, 0.3);
+}
+
+</style>
+	</head>
+
+	<body>
+		<header>Blogger Template</header><br>
+		<div class="breaking_news">
+			<div class="break_string">Breaking</div>
+			<div class="break_line">|</div>
+		</div>
+	</body>
 </html>
+
