@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
+<!-- https://feedify-templateify.blogspot.com/ -->
 	<head>
+		<title>CTF Blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <style>
 body {
 	position: absolute;	/* body allow us to control every thing */
@@ -14,48 +17,48 @@ header {
 	text-align: center;
 	font-weight: bold;
 }
-
 .breaking_news {
-	background-color: rgb(242, 242, 242);
-	display: block;		/* cover up whole area */
+	display: none;
+}
+@media screen and (min-width: 700px) {
+	.breaking_news {
+		background-color: rgb(242, 242, 242);
+		display: block;		/* cover up whole area */
 
-	left: 0px;		/* live no space */
-	width: 100%;
-	height: 2.5em;
+		left: 0px;		/* live no space */
+		width: 100%;
+		height: 2.5em;
 
-	position: absolute;
+		visibility: visible;
+
+		position: absolute;
+	}
+
+	.breaking_news .break_string {
+		position: relative;
+
+		padding: 0;
+		margin: 0;
+		width: 10%;
+		height: 100%;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		color: black;
+
+		/* color: red; */
+	}
+
+	.breaking_news .padder {
+		width: 10%;
+		position: relative;
+		display: inline-flex;
+	}
 }
 
-.breaking_news .break_string {
-	position: relative;
 
-	padding: 0;
-	margin: 0;
-	width: 5%;
-	height: 100%;
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
-
-	font-size: 1em;
-	transform: scale(1., 1);
-
-	color: red;
-}
-
-
-.breaking_news .break_line {
-	position: relative;
-
-	display: inline-block;
-	justify-content: center;
-	font-size: 1em;
-	
-	width: 1%;
-	height: 100%;
-
-	color: rgba(0, 0, 0, 0.3);
-}
 
 </style>
 	</head>
@@ -63,8 +66,8 @@ header {
 	<body>
 		<header>Blogger Template</header><br>
 		<div class="breaking_news">
-			<div class="break_string">Breaking</div>
-			<div class="break_line">|</div>
+			<div class="padder"></div>
+			<div class="break_string">Breaking | </div>
 		</div>
 	</body>
 </html>
