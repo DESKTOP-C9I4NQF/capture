@@ -1,0 +1,6 @@
+# OEP : original entry point 
+# https://reverseengineering.stackexchange.com/questions/16783/what-does-va-and-oep-means-and-how-does-iat-be-fixed-manually#16785
+# https://reverseengineering.stackexchange.com/questions/72/unpacking-binaries-in-a-generic-way/91#91
+
+
+
