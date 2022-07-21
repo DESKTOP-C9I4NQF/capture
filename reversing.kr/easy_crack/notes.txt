@@ -1,1 +1,12 @@
-test
+Easy Crackme is challenge where we Introduced with
+Reversing Key  in Windows Elf 
+
+main function is right above exit function and when
+we go in main it creates dialog box exits and that
+checks for two things dialog box has handler
+function which checks for password , 
+Which is been checked separately in few cases
+and at last it checks for string check
+
+Required flag:
+Ea5yR3versing
