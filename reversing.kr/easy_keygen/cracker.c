@@ -12,12 +12,14 @@ char lookup_table[] = {
 };
 int counter;
 
+// convert name to serial number
 char *name2serial(char *name)
 {
 	size_t name_len = strlen(name);
 	char* input_serial_number = malloc(name_len * 2 + 1);
 	char *serial_copy = input_serial_number;
 
+	// loop through string and convert byte to hex
 	for (counter = 0; *name != '\0'; name++, counter %= 3)
 	{
 		sprintf(input_serial_number, "%02X", *name ^ lookup_table[counter++]);
@@ -40,6 +42,7 @@ char *serial2name(char *serial)
 	flag_str = malloc(input_serial_number_length / 2 + 1);
 	copy_str = flag_str;
 
+	// loop through serial number and extract hex to bytes
 	for (counter = 0; *serial != '\0'; serial += 2, counter %= 3)
 	{
 		sscanf(serial, "%02X", (int *)flag_str);
