@@ -8,7 +8,7 @@ main
 - Binary Takes  input from stdin in sizeof buffer is 0x32.
 - It convert that string into unsigned long integer.  
 
-  roll_dice
+  roll\_dice
   - allocate buffer of size given as input from fgets with calloc and fill it with random data in range of \[0,6\).
 
 - test
