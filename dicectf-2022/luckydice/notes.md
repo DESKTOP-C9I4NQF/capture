@@ -11,4 +11,19 @@ main
   roll\_dice
   - allocate buffer of size given as input from fgets with calloc and fill it with random data in range of \[0,6\).
 
-- test
+- Nextly program takes input again prints it, but In this case It is <u>format string</u> 
+
+> limit for printf padding is 2147483614 spaces
+
+## High Level Plan
+1. overwrite luck dice memory with 12
+2. win shell 
+
+## How to execute High Level plan
+> 10th index of printf contains our target pointer and we will overwrite with one byte by overflow few characters of string length
+```
+	%243c%10$hhn
+	%243c -> will pad required characters
+	%10$n -> will target to 10th index of printf i.e. printf will take input from stack.
+```
+flag: hope{tellin_ya_its_rigged_a02b54785626f795}
