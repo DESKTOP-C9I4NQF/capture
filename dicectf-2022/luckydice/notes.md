@@ -13,8 +13,6 @@ main
 
 - Nextly program takes input again prints it, but In this case It is <u>format string</u> 
 
-> limit for printf padding is 2147483614 spaces
-
 ## High Level Plan
 1. overwrite luck dice memory with 12
 2. win shell 
