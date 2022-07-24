@@ -2,12 +2,13 @@
 
 void _start ()
 {
+	// order of allocation doesn't matter right now
 	HMODULE kernel_lib_module;
 	FARPROC FreeLibrary;
 	HMODULE cur_process_hmodule;
 	FARPROC VirtualProtect;
 	lpflOldProtect flOldProtect;
-	int *ptr, *req_int_ptr;
+	char *ptr, *req_int_ptr;
 
 	kernel_lib_module = LoadLibraryA("kernel32.dll");
 
@@ -20,7 +21,7 @@ void _start ()
 	ptr = 0x409000;
 	req_int_ptr = 0x4094EE;
 
-	// changing each int in memory with by particular 
+	// changing each char in memory with by particular 
 	// xorred value.
 	while (ptr == req_int_ptr)
 	{
@@ -56,20 +57,71 @@ void _start ()
 
 repeat:
 	do {
-		*req_int_ptr++ = *ptr++;
+		*(int *)req_int_ptr++ = *(int *)ptr++;
 	} while (*ptr != 0xab);
 
-	(char *)ptr++;
-	if (*ptr != 0xcd)
+	if (*++ptr != 0xcd)
 		goto repeat;
 
-	(char *)ptr++;
-	if (*ptr != 0xef)
+	if (*++ptr != 0xef)
 		goto repeat;
+	ptr++;
 
 
-	(char *)ptr++;
 	req_int_ptr = 0x409129;
+	int* loaded_library;
 
+	while (1)
+	{
+		if (*req_int_ptr == 0xac)
+			goto task;
+
+		if (*(req_int_ptr+1) == 0xdf)
+			goto task;
+
+		req_int_ptr += 2;
+		loaded_library = LoadLibraryA(req_int_ptr);
+
+		while (*req_int_ptr++);
+task:
+		// loaded function
+		function = GetProcAddress(loaded_library, *(int *)req_int_ptr++);
+
+		while(*req_int_ptr++);
+		if (req_int_ptr == 0x4094EC)
+			break;
+	}
+
+	VirtualProtect(0x401000, 0x4000, PAGE_READWRITE, &flOldProtect);
+
+	ptr = 0x401000;
+	req_int_ptr = 0x405000;
+	req_int_ptr = 0x4094EE;
+
+	// changing each char in memory with by particular 
+	// xorred value.
+	while (ptr == req_int_ptr)
+	{
+		*ptr++ ^= 0x10;
+		if (ptr == req_int_ptr)
+			break;
+
+		*ptr++ ^= 0x20;
+		if (ptr == req_int_ptr)
+			break;
+
+		*ptr++ ^= 0x30;
+		if (ptr == req_int_ptr)
+			break;
+
+		*ptr++ ^= 0x40;
+		if (ptr == req_int_ptr)
+			break;
+
+		*ptr++ ^= 0x50;
+	}
+
+	// We are not interested in things
+	do_something_of_nointerest();
 	return 0;
 }
