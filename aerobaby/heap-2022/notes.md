@@ -1,4 +1,4 @@
-## heap-2022
+# heap-2022
 
 ***Given binary allow us to do few operations such as add chunck, delete chunck, view chunck***
 
@@ -11,3 +11,8 @@ chuncks dangling pointer
     free(chunks[chunk_id]);		// dangling pointer is still there
 }
 ```
+
+## Big Plan
+> Big plan  
+> 	1. testing
+> 	2. help
