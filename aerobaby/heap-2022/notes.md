@@ -12,7 +12,8 @@ chuncks dangling pointer
 }
 ```
 
-## Big Plan
-> Big plan  
-> 	1. testing
-> 	2. help
+## Big Plans
+> 	1. allocate 3 chunck
+> 	2. First two contains size ptr equals to 0
+> 	3. Size of third chunck is same to the size of `struct chunck_t`
+
