@@ -1,4 +1,5 @@
 #define PAGE_READWRITE 0x4
+#define __IMPORT_DESCRIPTOR_kernel32 0x405464
 
 void _start ()
 {

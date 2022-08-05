@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACTION_ADD	main.c	/^    ACTION_ADD = 1,$/;"	e	enum:Action	file:
+ACTION_DELETE	main.c	/^    ACTION_DELETE,$/;"	e	enum:Action	file:
+ACTION_EXIT	main.c	/^    ACTION_EXIT,$/;"	e	enum:Action	file:
+ACTION_VIEW	main.c	/^    ACTION_VIEW,$/;"	e	enum:Action	file:
+Action	main.c	/^enum Action {$/;"	g	file:
+CHUNKS_LIST_SIZE	main.c	12;"	d	file:
+MAX_CHUNK_SIZE	main.c	11;"	d	file:
+STDIN_FD	main.c	8;"	d	file:
+STDOUT_FD	main.c	9;"	d	file:
+add_chunk	main.c	/^void add_chunk(void) $/;"	f
+chunk_idx	main.c	/^size_t chunk_idx = 0;$/;"	v
+chunk_t	main.c	/^typedef struct chunk_t {$/;"	s	file:
+chunk_t	main.c	/^} chunk_t;$/;"	t	typeref:struct:chunk_t	file:
+chunks	main.c	/^chunk_t *chunks[CHUNKS_LIST_SIZE];$/;"	v
+delete_chunk	main.c	/^void delete_chunk(void) $/;"	f
+main	main.c	/^int main() $/;"	f
+ptr	main.c	/^    void *ptr;$/;"	m	struct:chunk_t	file:
+read_integer	main.c	/^int read_integer(void)$/;"	f
+read_into_buffer	main.c	/^ssize_t read_into_buffer(void *buf, uint32_t size) $/;"	f
+setup	main.c	/^void setup(void)$/;"	f
+size	main.c	/^    int64_t size;$/;"	m	struct:chunk_t	file:
+used	main.c	/^    int64_t used;$/;"	m	struct:chunk_t	file:
+view_chunk	main.c	/^void view_chunk(void)$/;"	f
+write_from_buffer	main.c	/^ssize_t write_from_buffer(const void *buf, uint32_t size) $/;"	f
