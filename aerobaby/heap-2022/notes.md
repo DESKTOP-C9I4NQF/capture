@@ -17,3 +17,4 @@ chuncks dangling pointer
 > 	2. First two contains size ptr equals to 0
 > 	3. Size of third chunck is same to the size of `struct chunck_t`
 
+![memory diagram](https://github.com/loggervicky69/ctf/blob/main/aerobaby/heap-2022/img/image.png?raw=true)
