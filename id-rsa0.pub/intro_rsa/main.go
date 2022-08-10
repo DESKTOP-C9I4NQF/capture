@@ -5,41 +5,32 @@ import (
 )
 
 /*
-Generation:
-	Pick two prime numbers of the same bit size, call them p and q
-	let N = p * q and let mul(N) = (p-1) * (q-1)
-	Choose an integer e such that gcd(e, mul(N)) = 1 (i.e. such that e and mul(N) share no common factors)
-	let d = e^-1 mod mul(N)
-	Output (e, N) as the public key and d as the private key.
+	d := e^-1 mod phi(N), d is private key
+	where phi (N) = (p - 1) * (q - 1)
+
+	(e, N) is public key
+	where N = p * q, e is such that gcd (e, phi(N)) == 1
+
+	enc: c = m ^ e mod N
+	dec: m = c ^ d mod N
 */
-
-/* 
-	Enc
-	To encrypt integer m with public key (e, N) calculate c = m^e mod N
-	Output c as the encrypted message.
-
-	Dec 
-	To decrypt integer c with private key d calculate m = c^d mod N.
-	Output m as the decrypted message.
-
-	if you're
-*/
-
 func main() {
-	p := new(big.Int)
-	q := new(big.Int)
+	exponent := new(big.Int)
+	N := new(big.Int)
+	message := new(big.Int)
 
-	p_minus_1 := new(big.Int)
-	q_minus_1 := new(big.Int)
+	cipher := new(big.Int)
+	decryption_exponent := new(big.Int)
 
-	g := new(big.Int)
+	//  we are going to using some modulo powering inorder get our plain
+	// text from cipher of rsa
+	exponent.SetString("3", 16)
 
-	// after all without knowing a fucking shit we have written a piece of shit
-	p.SetString("431d844bdcd801460488c4d17487d9a5ccc95698301d6ab2e218e4b575d52ea3", 16)
-	q.SetString("599f55a1b0520a19233c169b8c339f10695f9e61c92bd8fd3c17c8bba0d5677e", 16)
+	cipher.SetString("599f55a1b0520a19233c169b8c339f10695f9e61c92bd8fd3c17c8bba0d5677e", 16)
+	decryption_exponent.SetString("431d844bdcd801460488c4d17487d9a5ccc95698301d6ab2e218e4b575d52ea3", 16)
+	N.SetString("64ac4671cb4401e906cd273a2ecbc679f55b879f0ecb25eefcb377ac724ee3b1", 16)
 
-	p_minus_1.Sub(p, big.NewInt(1))
-	q_minus_1.Sub(q, big.NewInt(1))
-
-	g.GCD(nil, nil, p, q)
+	cipher.Exp(cipher, decryption_exponent, N)
+	fmt.Printf("%x\n", cipher)
+	message.Mod(message, N)
 }
