@@ -29,3 +29,5 @@ VB Decompiler give good understanding of how each functionality of Forms, After 
   loc_0040353C: push ecx
   loc_0040353D: call [00401030h] ; rtcVarFromFormatVar
 ```
+
+

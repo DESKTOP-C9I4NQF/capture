@@ -30,6 +30,7 @@ void _start ()
 		if (ptr == req_int_ptr)
 			break;
 
+
 		*ptr++ ^= 0x20;
 		if (ptr == req_int_ptr)
 			break;
