@@ -32,7 +32,7 @@ int private_decrypt(unsigned char * enc_data,int data_len,unsigned char *key, un
 	return RSA_private_decrypt(data_len,enc_data, decrypted, rsa, RSA_NO_PADDING);
 }
 
-int main(int argc, char* argv)
+int main(int argc, char* argv[])
 {
 
 	char privateKey[] = "-----BEGIN RSA PRIVATE KEY-----\n"
