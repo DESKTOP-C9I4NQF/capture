@@ -10,6 +10,7 @@ import (
 	"math/big"
 )
 
+// parsing RSA Public Key Information from PEM
 func parseRSAPublicKey(publicKey string) (*rsa.PublicKey) {
 	r := strings.NewReader(publicKey)
 	pemBytes, err := ioutil.ReadAll(r)
@@ -31,6 +32,7 @@ func parseRSAPublicKey(publicKey string) (*rsa.PublicKey) {
 	return publicKeyData.(*rsa.PublicKey)
 }
 
+// decrypting with RSA from private key
 func RSAPrivateKeyDecrypt(cipherText, p, q, e *big.Int) (*big.Int) {
 	p_minus_1 := new(big.Int)
 	q_minus_1 := new(big.Int)
@@ -41,9 +43,12 @@ func RSAPrivateKeyDecrypt(cipherText, p, q, e *big.Int) (*big.Int) {
 	p_minus_1.Sub(p, big.NewInt(1))
 	q_minus_1.Sub(q, big.NewInt(1))
 
+	// calculate N
 	N.Mul(p, q)
+	// calculate phi(N) from (p-1) and (q-1)
 	phi_N.Mul(p_minus_1, q_minus_1)
 
+	// calculating decryption exponenet
 	decryption_exp.Exp(e, big.NewInt(-1), phi_N)
 	return decryption_exp.Exp(cipherText, decryption_exp, N)
 }
@@ -66,6 +71,7 @@ func main() {
 	p := new(big.Int)
 	q := new(big.Int)
 
+	// cipher text integer
 	cipherText.SetString("f5ed9da29d8d260f22657e091f34eb930bc42f26f1e023f863ba13bee39071d1ea988ca62b9ad59d4f234fa7d682e22ce3194bbe5b801df3bd976db06b944da", 16)
 
 
