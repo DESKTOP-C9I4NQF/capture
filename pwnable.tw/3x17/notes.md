@@ -13,4 +13,8 @@ readelf -S 3x17 | grep fini_array
 ```
 
 What is grain of salt here is that init\_array is called by function init, and fini\_array is been called by .fini\
-ig plans:
+
+**big plans:**
+	In fini function:
+	1. rbp contains value of fini\_array which we control we spread our poison in fini\_array and change stack pointer to point where rbp is pointing with 
+	`leave, ret gadget`
