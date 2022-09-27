@@ -33,11 +33,11 @@
 
 > ## **dicectf  *babyrop***
 > **`Feb 6, 2022`**  
-> [babyrop Writeup](/ctf/blob/main/dicectf/baby-rop/README.md)
-> [REPO](https://github.com/loggervicky69/ctf/tree/main/dicectf/baby-rop)
+> [babyrop Writeup](/ctf/blob/main/dicectf/baby-rop/README.md)  
+> [REPO](https://github.com/loggervicky69/ctf/tree/main/dicectf/baby-rop)  
 
 > ## **dicectf  *interview&#95;oppurtunity***
 > **`Feb 6, 2022`**  
-> [interview&#95;oppurtunity Writeup](/ctf/blob/main/dicectf/interview_opportunity/README.md)
-> [REPO](https://github.com/loggervicky69/ctf/tree/main/dicectf/interview_opportunity)
+> [interview&#95;oppurtunity Writeup](/ctf/blob/main/dicectf/interview_opportunity/README.md)  
+> [REPO](https://github.com/loggervicky69/ctf/tree/main/dicectf/interview_opportunity)  
 

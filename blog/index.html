@@ -3,22 +3,89 @@
     <head>
         <style>
             .header {
-                background-color: black;
+                background-color: rgba(226, 118, 208, 0.8);
                 color: white;
-                height: 4rem;
-                display: block;
+                display: flex;
+                align-items: center;
+                height: 3rem;
+                font-size: 1.5em;
+                justify-content: right;
+                width: 100%;
+                position: fixed;
+                visibility: transparent;
             }
-            body {
-                margin: 0;
-                overflow: hidden;
+
+            * { padding: 0; margin: 0; }
+            html, body {
+                height: 100%;
+                overflow-x: hidden;
             }
+
+            .textdoc0 {
+                position: relative;
+                right: 0em;
+            }
+            .textdoc1 {
+                position: relative;
+                right: 7.0em;
+            }
+
+            .spread {
+                height: 7%;
+                background-color: white;
+            }
+
+            .separator {
+                background-color: white;
+                width: 0.2em;
+                height: 10%;
+                right: 2.8em;
+                position: relative;
+                border-radius: 1em;
+            }
+
+
+            .girlfriend {
+                display: flex;
+                justify-content: center;
+            }
+
+            #profile {
+                border-radius: 100%;
+                width: 300px;
+                height: 300px;
+            }
+
+            #myselftext {
+                padding: 4em;
+            }
+
+            #rose_id {
+                width: 100%;
+                height: 10height0
+            }
+
         </style>
     </head>
     <body>
         <div class="header">
-            thisfucker;
+            <div class="textdoc0">
+                Home
+            </div>
+            <div class="separator"></div>
+            <div class="textdoc1">
+                Sometext
+            </div>
         </div>
-        <div class="thisfucker">
+        <div class="spread"></div>
+        <div class="girlfriend">
+            <img src="https://pbs.twimg.com/profile_images/1559624685343543296/zLIBaL7B_400x400.jpg" id="profile">
+        </div>
+
+        <div id="myselftext">
+            <em>From</em>: <b>laggyalbedo</b> &lt;laggyalbedo@proton.me&gt;<br>
+             <em>this sitem for fuckers and pornstar</em>
+<!--            <img src="rose.jpg" id="rose_id"> -->
         </div>
     </body>
 </html>
