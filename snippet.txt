@@ -1,0 +1,2 @@
+git clone --depth 2 --filter=blob:none --no-checkout git_url
+git checkout main -- which_dir
