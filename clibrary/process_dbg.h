@@ -1,12 +1,20 @@
+#ifndef __PROCESS_DBG__
+#define __PROCESS_DBG__ 1
+
 #include <stdio.h>
+#include <string.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <unistd.h>
 #include <assert.h>
+
 #include <sys/user.h>
 #include <sys/ptrace.h>
+#include <sys/uio.h>
 #include <sys/wait.h>
 #include <sys/syscall.h>
+
 
 
 // process info struct contains information process id 
@@ -14,10 +22,10 @@
 // pipes which is used to communicate with child process
 struct process_info
 {
+	bool ptrace_enabled;
 	// child process id
 	pid_t child_pid;
 	int talk_fd[2];
-
 
     // stores bytes as backup 
     size_t *bkup_bytes;
@@ -28,9 +36,69 @@ struct process_info
     size_t *rq_bytes;
 };
 
+struct MemFileStruct {
+	void *base;
+	char fname[0xfff];
+};
+
+void GetFileInfo(struct process_info* pinfo, struct MemFileStruct *minfo, char* fname)
+{
+	char *line = NULL, proc_maps_file[256];
+	size_t size = 0;
+	FILE* fp;
+
+	snprintf(proc_maps_file, 256, "/proc/%d/maps", pinfo->child_pid);
+	fp = fopen(proc_maps_file, "r");
+	if (fp == NULL) {
+		fprintf(stderr, "Unable to open %s :(\n", proc_maps_file);
+		exit(EXIT_FAILURE);
+	}
+
+	while (getline(&line, &size, fp) != -1)
+	{
+		if (strstr(line, fname) != NULL)
+		{
+			size_t from, to, major, minor, ino, flags, pageoff;
+			sscanf(line, "%lx-%lx %4c %lx %lx:%lx %lu %s", 
+					&from,
+					&to,
+					(char*)&flags,
+					&pageoff,
+					&minor,
+					&major,
+					&ino,
+					minfo->fname);
+
+			minfo->base = (void*)from;
+			goto out;
+		}
+	}
+	minfo->fname[0] = '\0';
+	minfo->base = NULL;
+out:
+	// close open file descriptor
+	fclose(fp);
+	free(line);
+}
+
+// do giant read 
+size_t GiantRead(struct process_info* pinfo, void* addr) 
+{
+	return ptrace(PTRACE_PEEKTEXT, pinfo->child_pid, addr, NULL);
+}
+
+// do Giant write
+void GiantWrite(struct process_info *pinfo, void* addr, void* data)
+{
+	ptrace(PTRACE_PEEKTEXT, pinfo->child_pid, addr, &pinfo->bkup_bytes);
+	ptrace(PTRACE_POKETEXT, pinfo->child_pid, addr, data);
+}
+
 void executeCLD(
     struct process_info* self,			// process info struct
-    const char *prog_name,					// name of program to be executed
+    char** argv,
+    char** envp,
+
     void (*parent_exec_fcn)(struct process_info*) // parent function that should called 
     )
 {
@@ -54,10 +122,10 @@ void executeCLD(
 		close(from_child[1]);
 
         // traced by the parent process
-        ptrace(PTRACE_TRACEME, NULL, NULL, NULL);
+        if (self->ptrace_enabled) ptrace(PTRACE_TRACEME, NULL, NULL, NULL);
 
         // execute  program 
-		execl(prog_name, prog_name, NULL);
+	execve(argv[0], argv, envp);
 	}
 	else
 	{
@@ -74,3 +142,5 @@ void executeCLD(
 		close(from_parent[1]);
 	}
 }
+
+#endif
